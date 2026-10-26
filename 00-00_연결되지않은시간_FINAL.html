@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#090e1b"><title>00:00 — 연결되지 않은 시간</title><meta name="description" content="서로를 사랑했지만 끝내 마음을 전하지 못한 두 사람, 당신의 선택으로 그들의 끝나 버린 시간을 다시 이어 주세요."><meta property="og:title" content="00:00 — 연결되지 않은 시간"><meta property="og:description" content="서로를 사랑했지만 끝내 마음을 전하지 못한 두 사람, 당신의 선택으로 그들의 끝나 버린 시간을 다시 이어 주세요.">
+<style>
+:root{color-scheme:dark;--bg:#080d19;--surface:#111a2c;--surface2:#19263b;--border:#263850;--text:#f0f4fb;--muted:#9daec4;--ice:#95cdef;--violet:#b6a9f9;--pink:#f5b7cf;--ok:#a3e1c8}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 30% 10%,#182344 0%,#080d19 60%);font-family:system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--text);min-height:100vh}button{font:inherit;cursor:pointer}button:focus-visible{outline:2px solid var(--ice);outline-offset:2px}button:disabled{opacity:.35;cursor:not-allowed}.app{max-width:540px;min-height:100dvh;margin:auto;background:#0b1424;position:relative;border-left:1px solid #273149;border-right:1px solid #273149;display:flex;flex-direction:column}.top{display:flex;align-items:center;gap:12px;padding:18px 18px 14px;border-bottom:1px solid var(--border);background:#0d1729;position:sticky;top:0;z-index:5}.top .brand{font-size:20px;letter-spacing:2px;font-weight:750}.top small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.4px;margin-top:1px}.top .spacer{flex:1}.iconbtn{background:#17243a;color:#e7effc;border:1px solid #2b405a;padding:8px 10px;border-radius:12px;min-width:36px}.screen{flex:1;overflow-y:auto;padding:20px 17px 22px;scroll-behavior:smooth;min-height:400px}.bottom{background:linear-gradient(180deg,#101a2b,#0c1422);border-top:1px solid var(--border);padding:14px 17px max(16px,env(safe-area-inset-bottom));position:sticky;bottom:0;z-index:4}.eyebrow{letter-spacing:2.5px;text-transform:uppercase;color:var(--ice);font-size:10px;font-weight:800}.hero{padding:35px 13px 24px;text-align:center}.bigtime{font-size:clamp(70px,21vw,110px);font-weight:300;letter-spacing:-8px;line-height:1.12;background:linear-gradient(130deg,#f6fbff,#9bd2f2 70%,#b3a9ec);-webkit-background-clip:text;color:transparent}.sub{line-height:1.85;color:var(--muted);font-size:14px}.h1{font-size:23px;font-weight:750;margin:13px 0}.card{background:linear-gradient(145deg,#16253b,#111c2e);border:1px solid #2c425c;border-radius:19px;padding:18px;margin:13px 0}.panelrow{display:flex;gap:9px;align-items:center}.badge{font-size:10px;letter-spacing:1px;border:1px solid #3c526c;background:#1b2a40;padding:5px 8px;border-radius:999px;color:#b7cce3}.btn{display:block;width:100%;text-align:left;background:#1b2c44;border:1px solid #36506e;color:#edf4ff;padding:15px 16px;border-radius:13px;margin:9px 0;line-height:1.65;transition:.15s}.btn:hover{background:#263c5b;border-color:#6c9dba}.btn.primary{background:linear-gradient(120deg,#83b9e9,#ab9de9);color:#091222;font-weight:800;text-align:center;border:0}.btn.ghost{background:transparent;border:1px solid #33435d;text-align:center;color:#aebfda}.btn.compact{padding:9px 12px;margin:6px 0}.row{display:flex;gap:9px}.row>*{flex:1}.chaptertitle{font-size:24px;font-weight:800;letter-spacing:-.7px;margin:10px 0}.chapterdesc{color:#9eafc5;line-height:1.8}.scene{margin:8px auto 22px;text-align:center;color:#afc3dc;font-size:12px;letter-spacing:1px}.scene:before,.scene:after{content:'✦';color:#718aaa;padding:0 12px;font-size:9px}.chat{display:flex;align-items:flex-end;margin:14px 0;gap:8px}.chat.me{justify-content:flex-end}.avatar{width:30px;height:30px;border-radius:11px;display:grid;place-items:center;font-weight:900;color:#102133;background:#aacfe8;flex:0 0 30px}.avatar.woo{background:#c2b8ff}.bubble{max-width:83%;border-radius:17px 17px 17px 4px;background:#1b2b43;padding:11px 14px;line-height:1.62;font-size:14px;white-space:pre-line;overflow-wrap:anywhere}.chat.me .bubble{border-radius:17px 17px 4px 17px;background:#acc9e6;color:#102238}.chat.wooyoung.me .bubble{background:#bbb1f3;color:#201d39}.chat .label{font-size:10px;color:#90a6c1;margin-bottom:5px}.chat.me .label{text-align:right}.narration{line-height:1.92;font-size:13px;color:#a9bbd0;padding:14px 17px;background:#101c2f;border-left:2px solid #506d98;border-radius:0 11px 11px 0;margin:16px 0;white-space:pre-line}.system{margin:17px auto;padding:10px 13px;max-width:94%;text-align:center;border-radius:10px;border:1px solid #324363;font-size:11px;line-height:1.8;letter-spacing:.3px;color:#c4cbe5;background:#171c35;white-space:pre-line}.choiceTitle{color:#b8c9dd;font-size:12px;margin:6px 0 12px;letter-spacing:.3px}.clue{border:1px solid #344d68;border-radius:13px;padding:13px 14px;margin:9px 0;background:#15273c}.cluename{font-weight:700;font-size:13px}.sup{display:inline-block;vertical-align:super;font-size:9px;color:#9ca9e5;margin-left:4px}.cluedesc{font-size:12px;color:#a7bad1;line-height:1.7;margin-top:7px}.chip{display:inline-block;padding:6px 10px;border-radius:9px;background:#1d2f47;border:1px solid #344960;margin:3px;font-size:11px;color:#aec3e0}.chip.on{background:#8fbce7;color:#0f2035;border-color:#8fbce7}.toast{font-size:11px;color:#a3e1c8;padding:3px 0}.progress{height:4px;background:#1b2c42;border-radius:99px;overflow:hidden;margin:11px 0}.progress>div{height:100%;background:linear-gradient(90deg,#8fc6e9,#b6a6ed)}.sheet{position:fixed;inset:0;background:#030712bb;z-index:30;display:flex;align-items:flex-end;justify-content:center}.sheetinner{width:min(540px,100%);background:#101c2e;border:1px solid #43536d;border-radius:24px 24px 0 0;max-height:85vh;overflow:auto;padding:20px 18px 30px;box-shadow:0 -15px 65px #0008}.hide{display:none!important}.statrow{display:flex;justify-content:space-between;margin:8px 0;font-size:12px;color:#bacbe0}.footnote{color:#8297b1;line-height:1.7;font-size:11px}.divider{border:0;border-top:1px solid #2a3b52;margin:17px 0}.ending{padding:24px 18px;text-align:center;border:1px solid #6b6ca4;background:linear-gradient(155deg,#162542,#292442);border-radius:22px;margin:13px 0}.ending h2{font-size:25px;color:#e2d3ff}.switch{font-size:12px;color:#9eb2cd}.timeline{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0}.timeline span{font-size:10px;padding:5px 8px;border-radius:7px;border:1px solid #334760;color:#b4c8e0}.timeline span.now{background:#a1cae6;color:#0b1523;font-weight:800}@media(min-width:560px){.app{box-shadow:0 0 95px #0008}.screen{padding-left:26px;padding-right:26px}}@media(prefers-reduced-motion:reduce){.screen{scroll-behavior:auto}*{transition:none!important}}
+/* 00:00 — ARCHIVE EDITION: original CSS-only visual language */
+:root{color-scheme:light;--bg:#dedbd4;--surface:#f4f1eb;--surface2:#ebe6dd;--border:#c7c0b4;--text:#242b2d;--muted:#777d79;--ice:#6f8684;--violet:#777b84;--pink:#a4897d;--ok:#4a786c}
+body{background:#d8d5ce;color:var(--text);font-family:'Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif}
+.app{background:#f1eee8;border-left:1px solid #c9c3b8;border-right:1px solid #c9c3b8}
+.top{background:#f1eee8;border-bottom:1px solid #bdb8b0;padding:21px 22px 17px}
+.top .brand{font-family:Georgia,'Times New Roman',serif;font-size:25px;letter-spacing:4px;font-weight:400;color:#26383a}
+.top small{font-size:9px;letter-spacing:1.7px;color:#787c78}
+.iconbtn{background:transparent;border:1px solid #bfbcb4;border-radius:50%;color:#3e5050;width:43px;height:43px;padding:7px}
+.screen{padding:25px 23px 30px;background:#f1eee8}
+.bottom{background:#eeebe5;border-top:1px solid #c6c0b5;padding:17px 23px max(22px,env(safe-area-inset-bottom))}
+.hero{padding:63px 2px 43px;text-align:left;position:relative;border-bottom:1px solid #bdb8af;margin-bottom:21px}
+.hero::before{content:'ARCHIVE / 001';position:absolute;right:3px;top:16px;font-family:monospace;font-size:9px;letter-spacing:1.5px;color:#8b918b}
+.eyebrow{color:#677c7b;letter-spacing:2.7px;font-weight:500;font-family:monospace;font-size:10px}
+.bigtime{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-6px;font-size:clamp(82px,25vw,132px);color:#26383a;background:none;-webkit-background-clip:initial;line-height:1.3;margin:12px 0 31px}
+.hero .bigtime::after{content:'';display:block;width:56px;border-bottom:1px solid #778b87;transform:translateY(4px)}
+.h1{font-size:24px;letter-spacing:-1px;font-weight:550;margin:8px 0 27px;color:#2c3435}
+.sub{color:#6e7472;line-height:2.1;font-size:13px;letter-spacing:-.2px}
+.card{background:#f5f2ec;border:1px solid #cac4b9;border-radius:2px;box-shadow:none;padding:21px;margin:15px 0}
+.badge{color:#6d7672;border:1px solid #d0c8bd;background:transparent;border-radius:0;font-size:9px;letter-spacing:0;padding:5px 7px}
+.btn{background:transparent;border:1px solid #b8b9b0;color:#2e3d3d;border-radius:1px;padding:19px 16px;margin:10px 0;font-size:14px;letter-spacing:-.2px;transition:background .15s}
+.btn:hover{background:#e6e6df;border-color:#8d9b95}
+.btn.primary{background:#263f40;border:1px solid #263f40;color:#f8f5ec;font-weight:500;text-align:left}
+.btn.primary:hover{background:#395658}
+.btn.ghost{background:transparent;border-color:#c6c2b9;color:#81847e;font-weight:400}
+.chaptertitle{font-weight:560;color:#293c3d;font-size:25px}
+.chapterdesc{color:#697470}
+.scene{color:#8a8980;font-size:11px;letter-spacing:1.6px;margin:24px auto}
+.scene:before,.scene:after{content:'—';color:#aaa79e}
+.avatar{border-radius:50%;background:#d9dfdb;color:#3a5250;font-weight:500}
+.avatar.woo{background:#e5ded7;color:#795d53}
+.bubble{background:#e2e6e2;color:#243637;border-radius:2px 13px 13px 13px}
+.chat.me .bubble{background:#354e4d;color:#f7f7f0;border-radius:13px 2px 13px 13px}
+.chat.wooyoung.me .bubble{background:#72695f;color:#fffaf2}
+.chat .label{color:#78817c}
+/* Chat bubbles: prevent outgoing messages from shrinking into narrow columns on mobile. */
+.chat > div:not(.avatar){min-width:0;max-width:84%;}
+.chat .bubble{width:max-content;max-width:100%;overflow-wrap:break-word;word-break:keep-all;}
+
+.narration{background:#e7e4dd;border-left:1px solid #7f8980;border-radius:0;color:#626863;font-size:13px}
+.system{background:transparent;color:#767e79;border:1px dashed #b8b5aa;border-radius:1px;font-family:monospace}
+.choiceTitle{color:#737a75}
+.clue{background:#eeece5;border:1px solid #c5c1b7;border-radius:1px}
+.sup{color:#8d756b}.cluedesc{color:#6b7773}
+.chip{background:#eeeae2;border:1px solid #ccc5b9;color:#67716d;border-radius:1px}
+.chip.on{background:#344e4d;color:white;border-color:#344e4d}
+.toast{color:#3a7462}
+.progress{background:#dad8d0}.progress>div{background:#607e77}
+.sheet{background:#1721209e}.sheetinner{background:#f2eee8;color:#293a3a;border:1px solid #c8c1b5;border-radius:12px 12px 0 0}
+.statrow{color:#68756e}.footnote{color:#8b8880}.divider{border-top-color:#c6c3b9}
+.ending{background:#e7e9e3;border:1px solid #a2b0a8;border-radius:2px}.ending h2{color:#334d49}
+.switch{color:#7e8983}
+.timeline span{color:#576d67;border-color:#c9cec6;border-radius:1px}.timeline span.now{background:#385a56;color:#fff;font-weight:500}
+@media (min-width:560px){.app{box-shadow:0 0 85px #46463b26}}
+
+.round-tag{font-size:10px;letter-spacing:.15px;color:#8b8074;padding:4px 5px;border-left:1px solid #b6b1a7;max-width:95px;min-width:48px;white-space:normal;line-height:1.5}.top{gap:9px}.top .brand{font-size:22px}.letter-end{border:1px solid #b9b1a6;padding:20px 17px;margin:14px 0;background:#ede9df}.letter-end h2{font-family:Georgia,serif;font-weight:400;font-size:24px}.letter-body{white-space:pre-line;line-height:2.05;font-size:13px;color:#3a4541;margin:25px 0}.ending .sub{color:#5a625d!important}.ending{border:1px solid #c5b8a6!important;background:#ece7de!important}.ending h2{color:#344444!important}.btn:focus-visible{outline:2px solid #536b65;outline-offset:3px}@media(max-width:370px){.top{padding-left:12px;padding-right:12px;gap:7px}.round-tag{font-size:9px;max-width:72px}.top .brand{font-size:19px}.iconbtn{width:36px;height:36px}}
+/* Unavailable ending actions are visibly locked and never clickable. */
+.btn.locked,.btn.locked:hover{background:#e5e2dc!important;border-color:#ccc5ba!important;color:#938f87!important;cursor:not-allowed;opacity:1;box-shadow:none;text-align:left}
+.btn.locked:disabled{pointer-events:none}
+.lock-reason{display:block;font-size:11px;line-height:1.6;color:#827f78;margin:-4px 2px 11px}
+/* Clue notifications — restrained archive styling */
+.archive-dot{position:absolute;right:4px;top:4px;width:8px;height:8px;border-radius:50%;background:#aa4f43;border:1px solid #f2eee7;pointer-events:none}
+#cluesBtn{position:relative;min-width:42px;min-height:42px}
+.clue-open{width:100%;text-align:left;color:inherit;cursor:pointer;display:block}
+.clue-open:focus-visible{outline:2px solid #55756c;outline-offset:3px}
+.clue-unread{border-left:3px solid #aa4f43}
+.clue-newtag{font-size:10px;float:right;color:#aa4f43;letter-spacing:1px}
+.clue-notice{border:1px solid #b9afa1;background:#ede8de;padding:15px 14px;line-height:1.85;color:#34453f;margin:14px 0}
+.clue-notice h3{font-size:13px;margin:0 0 5px;letter-spacing:1px}
+.clue-notice p{font-size:12px;margin:4px 0 12px}
+#clueToast{position:fixed;top:68px;left:50%;transform:translateX(-50%);width:min(475px,calc(100% - 30px));background:#f4f0e8;color:#354640;z-index:15;padding:12px 13px;border:1px solid #bcae9f;box-shadow:0 5px 22px #29312920;font-size:12px;line-height:1.5}
+#clueToast button{border:0;background:transparent;text-decoration:underline;color:#354f47;font:inherit;cursor:pointer;margin:7px 13px 0 0;padding:5px 0}
+
+/* V8 / Quiet but unambiguous conversation timelines */
+.conversation-context{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 18px;padding:11px 12px;border-top:1px solid #b7c2bc;border-bottom:1px solid #b7c2bc;font-size:11px;color:#38554f;letter-spacing:.3px;background:#e4eae5}
+.conversation-context .context-kind{font-weight:800;letter-spacing:1px}
+.conversation-context .context-date{font-family:monospace;font-size:10px;white-space:nowrap}
+.conversation-context.present{background:#eee5db;border-color:#bda995;color:#6c4e3d}
+.conversation-context.face{background:#e8dfd3;border-color:#ae9380;color:#674934}
+.chat.present .bubble{background:#eee2d6;color:#573f31;border:1px solid #d6bba4}
+.chat.present.me .bubble{background:#766354;color:#fffaf2;border-color:#766354}
+.chat.present .label{color:#8a6654}
+.chat.face .bubble{background:#f0e8db;border:1px solid #c7b09a;color:#523e34}
+.chat.face.me .bubble{background:#716052;color:#fdf7ee}
+.chat.face .label{color:#7d5f4e}
+.chat .bubble{word-break:keep-all;overflow-wrap:break-word}
+/* Critical clue interruptions must visually dominate the quiet archive. */
+.sheet.critical-sheet{align-items:center;padding:16px}
+.sheet.critical-sheet .sheetinner{width:min(500px,100%);max-height:90dvh;border:2px solid #8f4e42;border-radius:3px;background:#f4eee5;padding:28px 21px;box-shadow:0 18px 70px #251b1970}
+.critical-title{font-size:clamp(26px,7vw,37px);line-height:1.22;letter-spacing:-1px;font-weight:800;margin:14px 0;color:#843e34}
+.critical-symbol{font-size:36px;color:#a34739;line-height:1}
+.critical-lead{font-size:17px;font-weight:750;line-height:1.6;color:#352f2c}
+.critical-items{font-size:13px;line-height:2;margin:15px 0;padding:14px;background:#eadfd2;border-left:4px solid #a75b48;color:#483a32}
+.critical-sheet .btn.primary{font-weight:750;text-align:center;padding:18px 10px}
+.critical-sheet .btn.ghost{text-align:center}
+@media(max-width:360px){.conversation-context{align-items:flex-start;flex-direction:column}.sheet.critical-sheet .sheetinner{padding:20px 15px}}
+
+.evidence-card{padding:25px 20px;margin:12px 0;background:#eee5d7;border:1px solid #c4b29b;color:#493a2f;min-height:178px}
+.evidence-title{font-family:serif;font-size:22px;line-height:1.5;margin:15px 0 10px}.evidence-copy{font-size:13px;line-height:1.85;white-space:pre-line}
+
+.accident-reveal{margin:18px 0 24px;padding:22px 18px;border:1px solid #bcb3a6;background:#e9e5db;color:#324642} .accident-reveal h2{font-family:serif;font-size:23px;line-height:1.45;margin:12px 0} .accident-lead{font-size:14px;line-height:1.9;margin:12px 0 18px} .accident-news{padding:14px 0;line-height:1.85;font-size:13px;border-top:1px solid #aaa69c;border-bottom:1px solid #aaa69c}.accident-news strong{font-size:15px}.accident-final{text-align:center;line-height:1.9;margin:20px 0;font-size:12px;letter-spacing:.5px;color:#835448}
+
+.voice-meta{font-size:12px;color:#66736e;letter-spacing:.04em;margin:12px 0 16px}.voice-play{border-top:1px solid #b6b4aa;border-bottom:1px solid #b6b4aa;padding:12px 0;font-size:13px;color:#344a46}.voice-quote{font-family:serif;font-size:19px;line-height:2.05;padding:18px 0;color:#3d4644;word-break:keep-all}.voice-memo{background:#eee9df;padding:16px;line-height:1.9;font-size:14px;color:#545a57;border-left:2px solid #788b83}.voice-memo b{font-size:12px;letter-spacing:.06em}
+
+/* V13: compact, collapsible action dock; reading text occupies the available viewport. */
+html,body{height:100%;overscroll-behavior:none}
+.app{height:100dvh;min-height:0;overflow:hidden}
+.screen{min-height:0;overflow-y:auto;flex:1 1 auto;padding-bottom:32px;-webkit-overflow-scrolling:touch}
+.top{flex-shrink:0}
+.bottom{flex:0 0 auto;position:relative;bottom:auto;z-index:4;padding:5px 15px max(9px,env(safe-area-inset-bottom));max-height:49dvh;overflow-y:auto;box-shadow:0 -5px 22px #373d3510}
+.actions-toggle{display:block;width:100%;border:0;background:transparent;color:#65726a;font-size:12px;letter-spacing:.06em;text-align:center;padding:6px 10px 8px;cursor:pointer}
+.action-content .btn{padding:12px 15px;margin:5px 0;line-height:1.5;min-height:46px}
+.action-content .btn.primary{padding:13px 15px}
+.action-content .choiceTitle{margin:3px 0 7px;font-size:12px}
+.bottom.is-collapsed{max-height:none}
+.bottom.is-collapsed .action-content{display:none}
+.bottom.no-actions{display:none}
+@media(max-width:420px){.bottom{padding-left:13px;padding-right:13px}.action-content .btn{font-size:14px}}
+</style>
+<style>
+.ending-replay-row{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;margin:5px 0;padding:12px 10px;text-align:left;color:var(--text);background:var(--surface,#f3f0e9);border:1px solid var(--border,#c6c0b7);border-radius:5px;font:inherit;font-size:12px;cursor:pointer}
+.ending-replay-row span:last-child{flex-shrink:0;color:var(--muted,#586760);font-size:11px}
+.ending-replay-row:focus-visible{outline:2px solid #617b73;outline-offset:2px}
+.ending-locked-row{opacity:.67}
+</style></head><body><div class="app"><header class="top"><div class="round-tag" id="roundTag">기록 미선택</div><div><div class="brand">00:00</div><small>연결되지 않은 시간 · ARCHIVE</small></div><div class="spacer"></div><button class="iconbtn" id="cluesBtn" title="단서함" aria-label="단서 수집함">⌕<span class="archive-dot hide" id="archiveDot" aria-hidden="true"></span></button><button class="iconbtn" id="menuBtn" title="메뉴">☰</button></header><main class="screen" id="screen"></main><footer class="bottom" id="actions"></footer></div><div class="hide" id="clueToast" role="status" aria-live="polite"></div><div class="sheet hide" id="sheet" role="dialog" aria-modal="true"><div class="sheetinner" id="sheetContent"></div></div>
+<script>
+'use strict';
+const KEY='unconnected_0000_archive_playtest_v15';
+const NAMES={san:'최산',woo:'정우영'};
+const dateByChap=['2020.07.10','2020.07.10','2020.08.03','2020.09.12','2020.11.18','2022.08.16','2022.08.17','2023.11.26','2023.11.26'];
+const routeTheme={san:'살려야 하는 사람의 기록 · 미스터리 / 구원',woo:'말해야 하는 사람의 기록 · 첫사랑 / 화해'};
+const years=['PROLOGUE','01','02','03','04','05','06','07','08'];
+const titles=['마지막 비행','너는 내가 아는 사람','아무것도 말하지 않는 사람','지워진 하루','우리가 끝난 날','다시 연결된 날','살려야 하는 시간','네가 있는 세계','같은 시간에, 너에게'];
+const catalog=[['initial',0,'최초의 메시지','2023년의 최산과 2020년의 정우영이 연결된 첫 기록.'],['futuredate',0,'미래의 저장 날짜','2020년에 존재하지 않는 2023.11.26이 연락처 저장일로 표시된다.'],['undeletable',0,'삭제되지 않는 연락처','삭제한 연락처 ‘미래’가 다시 나타난다.'],['letter',1,'2019년 우영의 생일 편지','산이 우영에게 주었던 편지. 지운 문장이 남아 있다.'],['erased',1,'지워진 마지막 문장','편지에서 지워진 고백의 흔적.'],['worry',2,'말하지 못한 고민','우영은 친구가 자신에게 무언가를 숨긴다고 생각한다.'],['abroad',2,'해외 출국 서류','산은 해외로 떠날 준비를 비밀로 했다.'],['photo',3,'존재하지 않았던 사진','산이 기억하지 못하는 2020년의 두 사람 사진.'],['original',3,'원래 시간선 기록','바뀌기 전 기록을 산이 보존했다.'],['confession',4,'보내지 못한 고백','“나 사실 너 좋아해.” 끝내 전송하지 못했다.'],['call',4,'마지막 통화 기록','2020년 11월, 두 사람이 헤어지는 계기가 된 통화.'],['article',5,'사고 기사','2022년 8월 17일 공항행 도로에서 연쇄 추돌 사고.'],['unsent',5,'유품 사진 속 미전송 메시지','동창에게 전달받았던 우영의 유품 사진에 남은 16:39의 미전송 초안. 기사에는 실리지 않은 개인 기록.'],['time1642',5,'사고 시각 16:42','사고가 발생한 시각, 오후 4시 42분.'],['map',6,'사고 구간 지도','사고가 발생한 공항행 도로의 구간.'],['phone2022',6,'2022년 통화 기록','우영이 2022년의 산과 연락한 흔적.'],['newphoto',7,'바뀐 2023년의 사진','바뀐 시간선의 두 사람.'],['double',7,'두 개의 기억','산은 원래 세계와 달라진 세계를 함께 기억한다.'],['last',8,'마지막 연결 기록','00:00이 종료되고 새로운 시간이 시작된다.'],['prev',8,'이전 사용자 기록','“이번에는 꼭 만나고 싶었습니다.” 낯선 남자와 관련된 기록.']];
+const WOO_CATALOG=[
+ ['w_contact',0,'낯선 연락처 ‘미래’','2020.07.10. 내 기억에는 없는 번호가 연락처에 나타났다.'],
+ ['w_saved',0,'2023년의 저장 날짜','연락처에 적힌 저장일은 2023.11.26. 지금보다 3년이나 뒤다.'],
+ ['w_return',0,'다시 생긴 연락처','삭제했는데도 같은 이름이 다시 나타났다.'],
+ ['w_letter',1,'2019년 우영의 생일 편지','산이 건넨 편지. 생일 축하한다는 말 끝에 지워진 자국이 있다.'],
+ ['w_erasure',1,'편지 끝의 수정 흔적','볼펜으로 문장을 지운 자국. 산은 무엇을 적으려 했을까?'],
+ ['w_cancel',2,'취소된 영화 약속','산의 일정이 자꾸 바뀌면서 둘 사이에 빈 시간이 늘어났다.'],
+ ['w_deleted',2,'삭제된 메시지 알림','최산: “우영아, 사실 나……” / 대화창에는 ‘삭제된 메시지’만 남았다.'],
+ ['w_voice',3,'2019년 음성 메시지','2019.07.10 · 산의 생일날 도착한 음성 메시지. 그때는 산이 기다렸고, 지금은 우영이 기다린다.'],
+ ['w_draft',3,'고백 메모 초안','“나 너 좋아해.” 적어 놓고 전송하지 못했던 우영의 초안.'],
+ ['w_lastcall',4,'마지막 통화 기록','2020.11.18. 서로를 붙잡지 못했던 마지막 통화.'],
+ ['w_unsentletter',4,'산에게 쓰다 만 편지','끝내 보내지 못한 편지 첫 줄에는 ‘산아.’라고만 적혀 있다.'],
+ ['w_reappeared',5,'2년 만에 돌아온 ‘미래’','2020년에 사라졌던 연락처가 2022.08.16 다시 나타났다.'],
+ ['w_backup',5,'오래된 메시지 백업','‘미래’는 우영이 하지 못한 말을 이상할 정도로 잘 이해했다.'],
+ ['w_airportletter',6,'2022년의 결심','산에게 어떻게 다가갈 것인지 선택한 날의 메모. 선택에 따라 편지가 전송되거나 남는다.'],
+ ['w_meeting',7,'다시 만난 날의 기록','2022년, 우영이 산을 다시 마주하고 자신이 정한 말을 전한 날.'],
+ ['w_truth',8,'마지막으로 전한 말','2022년의 산을 마주한 우영이 직접 고른 마지막 말.'],
+];
+const catalogSanIds=new Set(catalog.map(v=>v[0]));
+const allCatalog=[...catalog,...WOO_CATALOG];
+function clueFor(id){return allCatalog.find(v=>v[0]===id)}
+function visibleCatalog(){return s.role==='woo'?WOO_CATALOG:catalog}
+const endingNames=['닿지 못한 시간','낯선 사람','우리 아직 친구지?','조금 늦은 고백','우리가 사랑했던 시간','다시, 처음부터','창가의 남자','00:01'];
+const empty=()=>({accepted:false,roleCounts:{san:0,woo:0},failures:0,loopHistory:[],mode:'home',role:null,chapter:0,step:0,stage:'intro',routeIndex:0,canon:{},run:{},clues:[],endings:[],endingRecords:{},completed:[],timeline:0,history:[],seen:{},unreadClues:[],clueNoticeSeen:{},runClues:[],updated:Date.now()});
+let s;try{s=JSON.parse(localStorage.getItem(KEY))||empty()}catch(e){s=empty()};
+if(!Array.isArray(s.clues)||!s.canon||!s.run)s=empty();s.activeRoute ??= (s.mode==='play');s.roleCounts ||= {san:0,woo:0};s.loopHistory ||= [];s.endingRecords ||= {};s.failures ||= 0;s.unreadClues ||= [];s.clueNoticeSeen ||= {};if(!Array.isArray(s.runClues))s.runClues=[...s.clues];
+const $=id=>document.getElementById(id);const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function save(){s.updated=Date.now();try{localStorage.setItem(KEY,JSON.stringify(s))}catch(e){}}
+let footerCollapsed=false;
+function toggleActions(){footerCollapsed=!footerCollapsed;const el=$('actions');el.classList.toggle('is-collapsed',footerCollapsed);const b=$('actionsToggle');if(b){b.setAttribute('aria-expanded',String(!footerCollapsed));b.textContent=footerCollapsed?'▴ 선택지 펼치기':'▾ 선택지 접기';}}
+function set(html,footer=''){
+ updateCounter();updateArchiveDot();$('screen').innerHTML=html;
+ if(footer.includes('pick('))footerCollapsed=false;
+ const buttons=footer?`<button type="button" id="actionsToggle" class="actions-toggle" onclick="toggleActions()" aria-controls="actionContent" aria-expanded="${!footerCollapsed}">${footerCollapsed?'▴ 선택지 펼치기':'▾ 선택지 접기'}</button><div class="action-content" id="actionContent">${footer}</div>`:'';
+ $('actions').innerHTML=buttons;$('actions').classList.toggle('is-collapsed',footerCollapsed&&!!footer);
+ $('actions').classList.toggle('no-actions',!footer);$('screen').scrollTop=0;save();
+}
+function updateCounter(){const el=$('roundTag');if(el)el.textContent=s.role ? `${NAMES[s.role]} · ${s.roleCounts[s.role]||1}회차` : '기록 미선택'}
+function btn(label,fn,cls=''){return `<button class="btn ${cls}" onclick="${fn}">${label}</button>`}
+function pageTitle(n){return `<div class="eyebrow">${n===0?'PROLOGUE':'CHAPTER '+String(n).padStart(2,'0')} · ${esc(s.role==='san'?'최산의 시점':'정우영의 시점')}</div><h1 class="chaptertitle">${s.role==='woo'?['미래라는 연락처','이상한 사람','네가 달라졌어','우리 무슨 사이야?','우리가 끝난 날','2년 만의 답장','너에게 가는 길','아직 못 한 말','우리가 시작하는 시간'][n]:titles[n]}</h1><p class="sub">${s.role==='san'?'2023.11.26':dateByChap[n]} · ${s.role==='san'?'기록 시점 ':'연결된 날짜 '}${dateByChap[n]}</p>`}
+function narration(txt){return `<div class="narration">${esc(txt)}</div>`}
+function system(txt){return `<div class="system">${esc(txt)}</div>`}
+function chat(who,txt,kind='connection'){let self=(who===s.role);const futureContact=s.role==='woo'&&who==='san'&&kind==='connection';const displayName=futureContact?'미래':(NAMES[who]||esc(who));const avatarName=futureContact?'미':who==='woo'?'우':'산';return `<div class="chat ${self?'me':''} ${who==='woo'?'wooyoung':''} ${kind==='current'?'present':kind==='face'?'face':''}">${self?'':`<div class="avatar ${who==='woo'?'woo':''}">${avatarName}</div>`}<div><div class="label">${esc(displayName)}</div><div class="bubble">${esc(txt)}</div></div>${self?'': ''}</div>`}
+function scene(lbl){return `<div class="scene">${esc(lbl)}</div>`}
+function currentChat(who,txt){return chat(who,txt,'current')}
+function faceChat(who,txt){return chat(who,txt,'face')}
+function contextFor(){
+ if(s.mode!=='play')return null;
+ const woo=s.role==='woo',ch=s.chapter,step=s.step,k=`${ch}:${step}`;
+ const map=woo?{
+  '1:2':'mixed','2:0':'present','2:1':'present','2:2':'present','3:0':'memory','3:1':'memory','3:2':'conditional_woo3','3:3':'present',
+  '4:0':'present','4:1':'phone','4:2':'present','4:3':'connection',
+  '5:2':'conditional_woo5','6:0':'present','6:1':'present','6:2':'conditional_woo6','6:3':'conditional_woo6last',
+  '7:0':'face','7:1':'face','7:2':'face','7:3':'face','8:0':'face','8:1':'face','8:2':'face','8:3':'face'
+ }:{'1:0':'connection','3:2':'conditional_san3','3:3':'memory','4:0':'memoryphone','4:1':'memoryphone','4:2':'connection','4:3':'connection',
+ '5:2':'archive','5:3':'archive','6:3':'archive','7:0':'archive','7:1':'phone','7:2':'phone','7:3':'face',
+ '8:0':'face','8:1':'face','8:2':'face','8:3':'face'};
+ let kind=map[k]||'connection';
+ if(kind==='conditional_san3'){const a=get('3-S01',2);kind=a===0?'memoryface':a===1?'memoryphone':'memory'}
+ if(kind==='conditional_woo3'){const a=get('3-W01',2);kind=a===0?'face':a===1?'present':'memory'}
+ if(kind==='conditional_woo5')kind=get('5-W01',2)===2?'memory':'present';
+ if(kind==='conditional_woo6')kind=get('6-W01',2)===0?'phone':get('6-W01',2)===1?'present':'memory';
+ if(kind==='conditional_woo6last')kind=get('6-W01',2)===2?'archive':'memory';
+ let date=woo?dateByChap[ch]:ch>=7?'2023.11.26':dateByChap[ch];
+ if(!woo&&['memory','memoryface','memoryphone','archive'].includes(kind))date=kind==='archive'&&ch===7?'2023.11.26':dateByChap[ch];
+ if(woo&&ch===3&&step===0)date='2019.07.10 → 2020.09.12';
+ const labels={connection:'◉ 시간 연결 · 과거/미래',present:'▣ 현재 시점 · 문자',face:'◇ 현재 시점 · 대면',phone:'▣ 현재 시점 · 전화 통화',memory:'▤ 과거 기록 · 회상',memoryface:'▤ 과거 기록 · 대면 회상',memoryphone:'▤ 과거 기록 · 전화 통화',archive:'▤ 자료 열람 · 기록 확인',mixed:'▣ 현재 문자 / 시간 연결'};
+ return {kind,date,label:labels[kind]};
+}
+function conversationBanner(){const x=contextFor();if(!x)return '';return `<div class="conversation-context ${x.kind==='connection'?'':x.kind==='face'?'face':'present'}" role="note"><span class="context-kind">${esc(x.label)}</span><span class="context-date">${esc(x.date)}</span></div>`}
+
+let toastQueue=[];
+function updateArchiveDot(){const dot=$('archiveDot');if(dot)dot.classList.toggle('hide',!(s.unreadClues||[]).length)}
+function clueGet(...ids){let fresh=[];for(const id of ids){if(!s.runClues.includes(id))s.runClues.push(id);if(!s.clues.includes(id)){s.clues.push(id);s.unreadClues.push(id);fresh.push(id)}}save();updateArchiveDot();if(fresh.length){toastQueue.push(...fresh);queueMicrotask(showClueToast)}}
+function showClueToast(){const box=$('clueToast');if(!box||!toastQueue.length||!$('sheet').classList.contains('hide'))return;const id=toastQueue.shift();if(!s.unreadClues.includes(id)){showClueToast();return}const found=clueFor(id);if(!found)return;box.innerHTML=`<b>새로운 기록이 발견되었습니다.</b><br>${esc(found[2])} <sup>${found[1]||'P'}</sup><br><button type="button" onclick="openClueDetail('${id}')">기록 확인하기</button><button type="button" onclick="dismissClueToast()">나중에</button>`;box.classList.remove('hide')}
+function dismissClueToast(){const box=$('clueToast');box.classList.add('hide');box.innerHTML='';if(toastQueue.length)setTimeout(showClueToast,120)}
+function openClueDetail(id,filter='all'){const c=clueFor(id);if(!c||!s.clues.includes(id))return;dismissClueToast();s.unreadClues=s.unreadClues.filter(v=>v!==id);save();updateArchiveDot();sheet(`<div class="row"><h2 style="flex:4;margin:0">ARCHIVE / ${c[1]===0?'P':String(c[1]).padStart(2,'0')}</h2><button class="iconbtn" onclick="closeSheet()">✕</button></div><p class="eyebrow">보관된 기록 · 확인 완료</p><h2>${esc(c[2])}</h2>${evidenceImage(id)}<p class="cluedesc">${id==='w_voice'?'2020년 9월 12일 · 취소된 약속 메시지를 거슬러 올라가다 발견한 기록.':esc(c[3])}</p>${btn('← 단서 수집함으로',`openArchive('${filter}')`,'ghost')}`)}
+const criticalByChoice={'5-S01':['article','time1642'],'6-S01':['article','time1642','map'],'4-W01':['w_deleted','w_cancel'],'6-W01':['w_unsentletter','w_reappeared']};
+function criticalReminder(id){
+ const relevant=criticalByChoice[id]||[];
+ const ids=relevant.filter(c=>s.runClues.includes(c)&&s.unreadClues.includes(c));
+ if(!ids.length||s.clueNoticeSeen[id])return false;
+ s.clueNoticeSeen[id]=true;save();
+ const names=ids.map(c=>clueFor(c)?.[2]).filter(Boolean);
+ const warning=`<div class="critical-symbol" aria-hidden="true">!</div><div class="eyebrow">ARCHIVE / IMPORTANT RECORD</div><h2 class="critical-title">중요 기록<br>미확인</h2><p class="critical-lead">아직 확인하지 않은 중요한 단서가 있어.</p><div class="critical-items">${names.map(n=>`<div>● ${esc(n)}</div>`).join('')}</div><p class="sub">지금 내리는 선택은 나중에 되돌릴 수 없어.<br><b>선택하기 전에 기록을 확인해 줘.</b></p><p class="footnote">단서만 확인해도 선택은 확정되지 않아. 원한다면 확인하지 않고 진행할 수도 있어.</p>${btn('📁 중요 기록 확인하기',`openArchive()`,'primary')}${btn('확인하지 않고 계속하기',`closeSheet()`,'ghost')}`;
+ sheet(warning);$('sheet').classList.add('critical-sheet');
+ return true;
+}
+function get(id,def=0){return s.canon[id]??def}
+function put(id,n){if(!(id in s.canon))s.canon[id]=n;s.run[id]=s.canon[id];save()}
+function choiceBlock(q,opts,id){queueMicrotask(()=>criticalReminder(id));let footer=`<div class="choiceTitle">${esc(q)}</div>`;opts.forEach((o,i)=>footer+=btn(`<b>0${i+1}</b> &nbsp; ${esc(o)}`,`pick('${id}',${i})`));return footer}
+function next(){s.step++;save();render()}
+function nextChapter(){s.chapter++;s.step=0;s.stage='intro';save();render()}
+function pick(id,i){if(criticalReminder(id))return;const existing=s.canon[id];if(existing!==undefined)i=existing;put(id,i);if(s.role==='san'&&id==='5-S01'){s.chapter=6;s.step=0;}else{s.step++;}save();render()}
+function stepView(body,choices=null,after='next()'){set(`<div>${pageTitle(s.chapter)}<div class="progress"><div style="width:${Math.round(100*s.step/Math.max(1,stepsFor(s.chapter)))}%"></div></div>${conversationBanner()}${body}</div>`,choices||btn('계속 읽기 ›',after,'primary'))}
+function stepsFor(n){return n===0?4:4}
+function findRoleChoice(id,opts){if(s.canon[id]===undefined)return choiceBlock('어떻게 할까?',opts,id);let n=s.canon[id];return `<div class="choiceTitle">시간선에 이미 기록된 선택 · 변경 불가</div>${btn('✓ '+esc(opts[n]),`pick('${id}',${n})`,'primary')}`}
+
+function showNotice(){set(`<div class="hero"><div class="eyebrow">RECORD 000 / BEFORE CONNECTION</div><div class="bigtime">00:00</div><h1 class="h1">당신의 선택은 이미 과거입니다.</h1><p class="sub">되돌릴 수 없습니다.<br>한 번 전송된 메시지는 취소할 수 없습니다.<br>그러나 모든 기록이 사라지는 것은 아닙니다.</p></div><div class="card"><div class="eyebrow">PLAY GUIDE</div><p class="sub">산은 우영의 생존을, 우영은 산과의 화해와 고백을 목표로 합니다. 두 시점은 각각 독립적인 시간선입니다. 신뢰·솔직함·유대감·안전도·단서·정체 인식이 선택에 따라 달라집니다. 수치는 표시되지 않습니다.</p><p class="sub">진행 중 선택 취소와 시간선 초기화는 불가합니다. 엔딩 확인 후 다른 시점이나 새로운 시간선을 열 수 있습니다.</p><p class="sub">동일 인물의 새로운 시간선은 왼쪽 위에 N회차로 표시됩니다. 단서에는 최초 발견한 챕터 번호가 붙습니다. 진행은 이 브라우저에 자동 저장됩니다.</p><p class="footnote">총 8개 엔딩 · 교통사고/사망/상실 소재 · 실존 인물의 사생활 및 실제 관계와 무관한 비공식 팬 창작 픽션</p></div>`,btn('자세한 플레이 안내',`openGuide()`)+btn('그럼에도 연결하시겠습니까? → 연결 시작',`acceptNotice()`,'primary'))}
+function acceptNotice(){s.accepted=true;s.mode='home';save();home()}
+function openGuide(){sheet(`<div class="row"><h2 style="flex:4;margin:0">PLAY GUIDE</h2><button class="iconbtn" onclick="closeSheet()">✕</button></div><p class="sub"><b>선택 요소</b><br>TRUST · 신뢰도<br>HONESTY · 솔직함<br>BOND · 유대감<br>SAFETY · 안전도<br>CLUES · 단서<br>RECOGNITION · 정체 인식</p><p class="sub">정확한 점수와 정답은 공개되지 않습니다. 선택에 따라 대사·안전·관계·엔딩이 달라집니다.</p><p class="sub"><b>되돌리기 금지</b><br>게임 도중 시간선 초기화, 다른 시점 시작, 선택지 취소는 불가능합니다. 페이지를 새로고침하면 저장된 단계에서 이어집니다.</p><p class="sub"><b>회차 / 시점</b><br>산과 우영 시점은 독립된 시간선이야. 각자 자신의 행동만 선택하고 각 루트에서 별도의 결말을 맞이해. 엔딩 후 같은 인물을 다시 시작하면 그 인물의 회차가 올라가.</p><p class="sub"><b>단서와 엔딩</b><br>보관함에서 기록을 볼 수 있습니다. 이름 옆의 작은 숫자는 발견 챕터입니다. 엔딩·단서는 시간선을 넘겨도 남습니다.</p><p class="sub"><b>저장</b><br>현재 기기의 브라우저에만 저장됩니다. 기기를 바꾸거나 캐시를 삭제하면 없어질 수 있습니다.</p><p class="footnote">약 2시간 30분~3시간 목표 · 총 8개 엔딩 · 픽션 / 실제 인물과 관계 없음</p>${btn('닫기',`closeSheet()`,'primary')}`)}
+
+function intro(){const b=`${scene('TIME CONNECTION')}${narration(s.role==='san'?'2023년 11월 26일. 한국행 비행기.\n산을 찾아왔던 동창이 우영의 죽음을 무심코 꺼냈다. ‘내가 아는 정우영이 맞아? 잘못 들은 거겠지.’ 몇 번이나 부정해도 대답은 같았다. 그럴 리가 없잖아. 걔가 죽었을 리가 없잖아.\n산은 창밖도 보지 못한 채 한국에 빨리 도착하기만 바란다. 왜 그때 널 두고 왔을까.':'2020년 7월 10일. 우영은 연락처 목록에서 기억에 없는 이름을 발견한다.\n‘미래’. 대체 언제 저장된 번호일까?')}${s.role==='san'?chat('san','……우영아.')+narration('“자리 좀 바꿔주시겠습니까. 창밖이 보고 싶어서요.”\n산은 멍하게 고개를 끄덕인다. “네…….”\n남자는 산의 표정을 오래 바라본다. 어쩐지 자신이 잃어버린 시간을 보는 듯한 얼굴이다.')+chat('san','이건 뭐예요?')+narration(s.failures>=3?'남자는 휴대폰을 건네며 낮게 말한다. “몇 번째인지 세는 것도 그만뒀어요. 꼭 행복했으면 하네요.”':s.failures>=2?'남자는 휴대폰을 건네며 말한다. “또 보네요. 이번에는 조금 일찍 알아채시길.”':s.failures>=1?'남자는 휴대폰을 건네며 말한다. “우리 다시는 보지 맙시다. 꼭 행복했으면 하네요.”':'남자는 휴대폰을 내민다. “저한테는 더 이상 필요 없거든요. 꼭 행복했으면 하네요.”')+system('00:00 — 알 수 없는 메시지 수신'):system('새 연락처가 발견되었습니다.\n미래')}`;stepView(b)}
+function render(){if(!s.accepted)return showNotice();if(s.mode==='home')return home();if(s.mode==='ending')return showEnding(s.run.ending??0);if(s.mode!=='play')return home();let c=s.chapter,k=s.step;if(c>8)return resolveEnding();const view=(s.role==='woo'?WOO_STORY:SAN_STORY)[c]?.[k];if(!view){return resolveEnding()}view()}
+const SAN_STORY=[
+[
+()=>intro(),
+()=>stepView(scene('2023.11.26 · 한국행 비행기')+narration('비행기 안에서 산은 낯선 휴대폰의 화면을 켠다. 누가 장난치는 걸까. 그런데 새 메시지의 발신자를 보고 숨이 멎는다. 정우영. 2022년에 죽었다는 그 이름.')+chat('woo','제 연락처에 처음 보는 번호가 있는데 누구세요?')+narration('모르는 번호를 경계하는 문장 끝에서 오래전 우영의 말투가 느껴진다.'),findRoleChoice('P-S01',['최산.','그냥 너 아는 사람.','네가 보고 싶었던 사람.'])),
+()=>{clueGet('initial');let i=get('P-S01',1);stepView(chat('san',['최산.','그냥 너 아는 사람.','네가 보고 싶었던 사람.'][i])+chat('woo',[ '……제 친구 이름을 어떻게 아세요?','아는 사람이면 이름부터 말해 주시죠 ㅋㅋ','저를요? 저희 아는 사이예요?'][i])+chat('san','너 지금 몇 년도야?')+chat('woo','2020년이요. 7월 10일.')+narration('산은 휴대폰의 날짜를 다시 본다. 2023년 11월 26일. 두 날짜 사이에는 우영의 죽음이 있다.'))},
+()=>stepView(system('[시간 연결 확인]\n우영: 2020.07.10\n산: 2023.11.26')+narration('바꿀 수 있는 과거인지, 누군가 꾸민 잔인한 장난인지 아직 모른다. 산은 우영이 보낸 메시지를 지우지 못한다.')+chat('woo','근데 왜 날짜를 물어봐요?')+chat('san','……확인하고 싶은 게 있어서.')+narration('산은 지금 당장 죽음에 관한 이야기를 꺼낼 수 없다. 먼저 이 사람이 정말 우영인지 알아야 한다.'),btn('CH.01로 ›','nextChapter()','primary'))
+],
+[
+()=>stepView(scene('2020.07.10 · 확인')+narration('산은 낯선 휴대폰을 들여다보다 2019년 우영의 생일을 떠올린다. 2019년 11월 26일. 생일 케이크에 묻은 크림, 모퉁이의 작은 편의점, 그리고 자신이 편지 마지막 줄을 몇 번이나 지웠던 일. 아무도 모르는 기억이었다.')+chat('woo','저 진짜 아는 사람 맞아요?')+chat('san','작년에 네 생일 때, 나랑…… 아니, 네 친구랑 편의점 앞에서 케이크 먹었지.')+chat('woo','헐. 그걸 어떻게 알아요?')),
+()=>stepView(narration('산은 그날 편지 뒷면에 남겨 둔 문장까지 기억한다. 그러나 그것까지 알려 주면 우영은 겁을 먹을지 모른다.')+chat('woo','혹시 산이가 알려 줬어요?'),findRoleChoice('1-S01',['그날 같이 있던 사람이 나야.','그냥 우연히 알게 됐어.','아직 말해 줄 수 없어.'])),
+()=>{clueGet('letter');let a=get('1-S01');stepView(chat('san',['그날 같이 있던 사람이 나야.','그냥 우연히 알게 됐어.','아직 말해 줄 수 없어.'][a])+chat('woo',[ '그게 무슨 소리예요? 산이가 여기 있는데요.','에이, 무슨 우연이 그렇게 정확해요 ㅋㅋ','그럼 더 수상한데요?'][a])+narration('우영이 완전히 믿지는 않아도 대화를 끊지는 않았다. 산은 오래된 편지를 다시 생각한다. 그때 마지막 줄에 적으려던 건 생일 축하가 아니라 고백이었다.'))},
+()=>{clueGet('erased');stepView(system('[ARCHIVE / 01] 2019년 생일 편지')+narration('산은 돌아갈 수 없다면 적어도 과거의 자신이 했던 실수를 반복하지 않겠다고 마음먹는다. 우영을 지켜보는 것만으로는 충분하지 않다.'),btn('CH.02로 ›','nextChapter()','primary'))}
+],
+[
+()=>stepView(scene('2020.08.03 · 말하지 않은 일')+narration('우영과의 대화가 몇 차례 이어진다. 처음에는 날씨나 점심 이야기였다. 그러나 어느 날 우영이 말끝을 흐린다.')+chat('woo','저 친구 하나 있는데요. 요즘 자꾸 약속을 미뤄요.')+chat('san','많이 친한 친구야?')+chat('woo','네. 제일 친한 애요.')+narration('산은 그때의 자신이 해외 지원 서류를 숨기느라 우영의 연락을 피했다는 것을 기억한다. 우영이 모르는 이유를 산만 알고 있다.')),
+()=>stepView(chat('woo','걔가 저한테 말 못 할 일이 있는 걸까요?')+narration('산은 지금 솔직하게 말하면 상처가 조금 덜할지 생각한다.'),findRoleChoice('2-S01',['숨기는 이유를 직접 물어보라고 한다.','서운했다는 마음부터 전해 보라고 한다.','지금은 기다려 보라고 한다.'])),
+()=>{clueGet('abroad','worry');let n=get('2-S01');stepView(chat('san',['계속 피하면 왜 그러는지 한 번은 물어봐.','너 서운한 거부터 말해 봐. 걔는 모를 수도 있어.','말할 준비가 안 된 걸 수도 있잖아.'][n])+chat('woo',['그래야겠네요. 저도 더는 답답하기 싫어요.','……서운한 건 맞아요. 진짜 많이요.','기다리면 언젠가 얘기해 줄까요?'][n])+narration('산의 휴대폰에 오래된 해외 출국 준비 기록이 떠오른다. 날짜는 2020년. 변명처럼 붙들던 서류가 이제는 두 사람을 갈라놓은 증거로 보인다.'))},
+()=>stepView(narration('산이 알던 2020년의 자신은 우영을 잃을까 봐 말하지 않았다. 결국 침묵 때문에 잃었다. 지금은 같은 말을 다시 삼킬 수 없다.')+chat('woo','근데 이상하네요. 낯선 분인데 얘기하면 좀 편해져요.')+chat('san','다행이다.')+narration('산은 그 짧은 대답을 보내고 한참 화면을 바라본다.'),btn('CH.03으로 ›','nextChapter()','primary'))
+],
+[
+()=>stepView(scene('2020.09.12 · 취소된 약속')+chat('woo','오늘도 영화 못 보게 됐어요.')+chat('san','그 친구가 또 취소했어?')+chat('woo','네. 이유도 안 알려 주고요. 제가 뭐 잘못했나 싶다니까요.')+narration('산에게 그날은 해외 면접 일정과 겹친 날이었다. 우영은 몇 시간을 기다렸고, 산은 미안하다는 한마디로 끝냈다.')),
+()=>stepView(chat('woo','찾아가서 물어볼까요, 아니면 그냥 돌아갈까요?')+narration('미래의 산이 할 수 있는 건 조언뿐이다. 우영의 결정을 대신 내릴 수는 없다.'),findRoleChoice('3-S01',['만나서 무슨 일인지 물어보라고 한다.','지금은 전화로 이유를 묻자고 한다.','오늘은 집에 가서 마음을 정리하라고 한다.'])),
+()=>{let n=get('3-S01');clueGet('original');stepView(n===0?narration('우영은 가까운 카페에서 산을 만난다. 2020년의 산은 잠깐 망설이다 “해외 면접이 있었어”라고 털어놓는다. 우영은 왜 자신에게 먼저 말하지 않았느냐고 묻는다. 다투지는 않았지만 두 사람 사이에 남은 질문은 사라지지 않는다.')+faceChat('woo','나한테 말해 줄 수도 있었잖아.')+faceChat('san','……미안. 겁났어.'):n===1?narration('우영은 산에게 전화를 건다. 산은 받지 못했다가 늦은 밤 짧은 답장을 보낸다. “개인적인 일정이 있었어. 나중에 말할게.” 여전히 모든 이유는 말하지 않는다.')+currentChat('woo','그 나중이 언제인데.'):narration('우영은 집으로 돌아온다. 산에게 보낸 “괜찮아?”라는 문자는 한참 뒤 읽음으로 바뀐다. 우영은 더 묻지 않는다.'))},
+()=>{clueGet('photo');stepView(system('[기록 변경 감지]\n2020.09.12 · 사진첩 갱신')+narration('2023년 산의 사진첩에 기억에 없던 사진이 나타난다. 선택에 따라 카페 앞의 우영, 늦은 밤의 통화 기록, 혹은 홀로 서 있는 자신의 모습이 남아 있다. 과거의 우영이 움직이자 산의 현재도 달라졌다. 그러나 우영의 죽음에 관한 원래 기억만은 지워지지 않는다.')+chat('san','……바뀔 수 있어.')+narration('산은 처음으로 구할 수 있다는 희망을 품는다.'),btn('CH.04로 ›','nextChapter()','primary'))}
+],
+[
+()=>stepView(scene('2020.11.18 · 기억 속의 마지막 날')+narration('우영의 메시지를 기다리던 산은 문득 마지막으로 통화했던 날을 떠올린다. 그날 싸움은 2020년의 두 사람이 전화로 나눈 말이었다. 지금 낯선 휴대폰으로 우영과 나누는 시간 연결 메시지가 아니다.')+currentChat('woo','너 해외 간다며.')+currentChat('san','아직 확정된 것도 아니고.')+currentChat('woo','나는 네가 떠나는 것도 남한테 들어야 하는 사람이야?')),
+()=>stepView(currentChat('woo','제발 말 좀 해.')+currentChat('san','니한테 말하면 뭐가 달라지는데. 더 멀어지기만 할 텐데.')+currentChat('woo','그럼 우리 끝내. 어차피 아무것도 말 못 하는 사이잖아, 우리!')+narration('기억은 여기서 끊긴다. 산은 그날 우영이 돌아보기를 바랐으면서도 붙잡지 않았다. 이제 와서 잘못을 안다고 해도 그날 자신이 했던 말은 없어지지 않는다.')),
+()=>stepView(scene('그날 밤 · 시간 연결 메시지')+chat('woo','저 결국 그 친구랑 끝났어요.')+chat('san','……많이 힘들지.')+chat('woo','제가 끝내자고 했는데요. 진짜 끝나니까 너무 이상해요.')+narration('지금 산은 ‘그 친구가 나였다’고 고백할 수도 있다. 하지만 자신을 위로해 달라고 매달리는 대신, 우영이 원하는 말을 들어야 한다.'),findRoleChoice('4-S01',['네 잘못만은 아니라고 말한다.','그 친구에게 하고 싶던 말을 써 보라고 한다.','아직 늦지 않았다고 말한다.'])),
+()=>{let n=get('4-S01');clueGet('call','confession');stepView(chat('san',['네 잘못만은 아니야. 혼자 다 안고 가지 마.','보내지 않아도 되니까, 하고 싶은 말을 적어 봐.','아직 끝이라고 단정하지 마.'][n])+chat('woo',['……처음 듣는 말이에요. 고마워요.','편지라도 써 볼까요. 못 보내더라도.','그럴까요? 근데 지금은 자신 없어요.'][n])+narration('산도 답장을 쓴다. “그날 너를 붙잡고 싶었어.” 전송 버튼에 손이 닿기 직전, 복도를 지나던 승무원이 그의 팔에 가볍게 부딪힌다. “죄송합니다.” 우연한 순간 뒤, 화면이 조용히 꺼진다. 우영에게서 ‘미래’가 사라진다.')+system('[시간 연결 종료]\n재연결 대기 · 날짜 불명'),btn('CH.05로 ›','nextChapter()','primary'))}
+],
+[
+()=>stepView(scene('2022.08.16 · 돌아온 연락처')+narration('산에게는 몇 초. 우영에게는 거의 2년. 휴대폰이 다시 켜지자 산은 우영의 메시지를 읽는다.')+chat('woo','저기요? 혹시 예전에 저랑 연락했던 분 맞아요?')+chat('san','왜 이제야 답장해?')+chat('woo','저 2년 동안 연락 못 했는데요?')+chat('san','……2년?')+narration('메시지 위의 날짜는 2022년 8월 16일이다. 산은 우영이 죽기 바로 전날에 닿았다.')),
+()=>stepView(chat('woo','저 내일 공항에 가려고요. 산이 한국에 온대요.')+chat('san','공항? 몇 시에?')+chat('woo','아직 정확히는요. 그냥 얼굴 보고 할 말이 있어서요.')+narration('산은 우영이 죽었다는 이야기를 들었던 순간을 떠올린다. 날짜를 모른 채 놀랐던 자신. 이제 날짜와 장소를 확인해야 한다. 산은 휴대폰에서 오래된 기사 보관함을 열어 본다.')+system('검색 기록 · 2022년 8월 / 공항행 도로'),btn('사고 기록 조사하기 ›','next()','primary')),
+()=>{clueGet('article','time1642');stepView(scene('ARCHIVE / 사고 기사')+narration('2022년 8월 17일 오후 4시 42분. 공항 방면 연결도로에서 연쇄 추돌 사고가 일어났고, 사망자 중 한 명은 정 모 씨, 23세. 산은 이름과 나이를 여러 번 읽는다. 사진은 없지만 날짜가 일치한다.')+system('2022.08.17 · 16:42\n공항행 연결도로 · 연쇄 추돌')+narration('죽음의 이유를 알아냈다고 해서 구할 수 있는 것은 아니다. 산은 사고 장소가 정확히 어느 길인지, 우영이 언제 출발했는지 확인해야 한다.'))},
+()=>{clueGet('unsent','map');stepView(narration('기사에 첨부된 도로 도면을 확대하자 공항까지 가는 길이 여러 갈래임을 알게 된다. 산은 자신의 오래된 백업 보관함을 뒤진다. 2023년 귀국 전 동창에게서 전달받았던 우영의 유품 사진 속 휴대폰 화면이 남아 있다. 그 사진에는 16시 39분에 작성하다 멈춘 메시지 초안이 보인다. 이 개인 기록은 사고 기사에 공개된 정보가 아니다. 3분 뒤 사고가 발생했다.')+chat('woo','저 내일 가면 무슨 말부터 할까요?')+narration('산은 아직 답하지 못한다. 시간이 없다. 하지만 우영을 겁주기 전에 정확한 방법을 골라야 한다.'),findRoleChoice('5-S01',['사고 날짜와 장소부터 분명하게 경고한다.','산에게 먼저 연락해서 일정을 잡으라고 한다.','출발 전에 반드시 다시 연락해 달라고 한다.']))}
+],
+[
+()=>stepView(scene('2022.08.17 · 사고 당일')+narration('아침부터 산은 휴대폰을 놓지 못한다. 우영이 어느 길로 가느냐에 따라 모든 것이 달라질 수 있다.')+chat('woo','오늘 그 친구 만나러 가려고요.')+chat('san',get('5-S01',1)===0?'그 길에서 사고가 날 수 있어. 제발 공항 쪽으로 바로 가지 마.':get('5-S01',1)===1?'그 친구한테 지금 전화해. 공항 말고 다른 곳에서 만날 수도 있잖아.':'나가기 전에 나한테 꼭 연락해. 급하게 움직이지 말고.')+chat('woo','……왜 그렇게까지 걱정해요?')+narration('우영은 미래의 산이 어떤 사람인지 모른다. 그러나 지금 이 말이 자신을 위한 것이라는 건 느낀다.')),
+()=>stepView(narration('산에게 남은 선택지는 세 가지. 모두 결과를 장담할 수 없다. 지금까지 확인한 단서와 우영의 반응을 떠올려야 한다.'),findRoleChoice('6-S01',['사고 시각과 연결도로 위치를 정확히 알려 준다.','공항에 가지 말고 다른 장소에서 만나게 한다.','2022년 산에게 먼저 전화를 걸게 한다.'])),
+()=>{let a=get('6-S01',2),prior=get('5-S01',1);let safe=(a===1)||(a===0&&prior===0)||(a===2&&prior===1);s.run.safety=safe?5:1;s.run.alive=safe;s.timelineOutcome=safe;save();if(a===2)clueGet('phone2022');stepView(a===0?chat('san','오후 4시 42분. 공항 연결도로는 가지 마. 정말 위험해.')+chat('woo','그걸 어떻게 알아요……?'):a===1?chat('san','공항으로 가지 마. 산이한테 네가 있는 쪽으로 오라고 해.')+chat('woo','그럴게요. 저 먼저 연락해 볼게요.'):chat('san','지금 산이한테 전화해. 둘이 먼저 약속해.')+chat('woo','무섭긴 한데…… 해 볼게요.')+narration(safe?'우영은 이동 계획을 바꾼다. 산이 떨리는 손으로 기사를 새로고침하자 기록의 글자가 흐릿하게 변하기 시작한다.':'우영은 한참을 망설인다. 산은 연결이 끊기기 직전까지 답장을 기다리지만, 아직 계획이 바뀌었다는 확인을 받지 못한다.'))},
+()=>{let ok=!!s.run.alive;stepView(system(ok?'[사고 기록 변동]\n피해자 명단 갱신 중':'[시간 연결 종료]\n메시지 미전송')+(ok?narration('2022년 8월 17일 오후 4시 42분. 사고는 일어났지만 새 피해자 명단에서 우영의 이름이 사라졌다. 산은 몇 번이고 확인한 뒤에야 숨을 쉰다.')+chat('woo','저 친구랑 통화했어요. 우리 다른 데서 보기로 했어요.')+chat('san','……잘했어. 정말.')+narration('산은 아무도 듣지 않는 비행기 좌석에서 얼굴을 감싸 쥔다.'):chat('san','우영아, 대답해 줘.')+narration('연결은 돌아오지 않는다. 새로 뜬 기록에도 우영의 이름은 남아 있다. 산이 고른 말은 결국 그를 사고 구간에서 떼어놓지 못했다.')),btn(ok?'CH.07로 ›':'엔딩 확인 ›',ok?'nextChapter()':'resolveEnding()','primary'))}
+],
+[
+()=>{if(!s.run.alive)return resolveEnding();clueGet('newphoto');stepView(scene('2023.11.26 · 다시 쓰인 현재')+narration('산이 한국에 도착하자 원래 쓰던 휴대폰이 진동한다. 자신이 기억하지 못하는 2022년 이후의 사진과 문자들이 생겨 있다. 살아 있는 우영의 기록이다. 그러나 산의 기억 속에는 여전히 우영의 장례식 이야기와 그를 잃은 1년이 남아 있다.')+system('[기록 갱신]\n정우영 · 연락처 복원')+narration('두 사람의 관계까지 저절로 좋아진 것은 아니다. 산은 가장 먼저 우영의 번호를 누른다.'))},
+()=>stepView(scene('2023.11.26 · 현재 시점 · 전화 통화')+currentChat('woo','여보세요?')+narration('목소리가 들린다. 죽은 줄 알았던 사람이 숨을 쉬고, 말을 한다. 산은 입을 열었다가 몇 번이나 다시 다문다.')+currentChat('woo','여보세요? 누구세요?')+currentChat('san','……우영아.')+currentChat('woo','어? 산아? 왜 말이 없어?')+narration('산은 울음이 터질 것 같아서 고개를 숙인다. 우영에게는 평범한 전화이지만 산에게는 기적이다.'),findRoleChoice('7-S01',['지금 만나자고 한다.','먼저 안부를 묻고 약속을 잡는다.','하고 싶은 말이 있다고 솔직히 말한다.'])),
+()=>{clueGet('double');let k=get('7-S01');stepView(k===0?currentChat('san','나 지금 너 보러 가도 돼?')+currentChat('woo','갑자기? ……그래, 어디야?'):k===1?currentChat('san','잘 지냈어? 밥은 먹었고?')+currentChat('woo','뭐야 ㅋㅋ 갑자기 엄마처럼. 너는?'):currentChat('san','나 너한테 꼭 해야 할 말이 있어.')+currentChat('woo','……무슨 일인데?')+narration('산은 예전에 두 사람이 자주 만나던 곳으로 향한다. 우영은 약속 장소를 보내 준다. 전화가 끊겨도 목소리는 귀에 남아 있다.'))},
+()=>stepView(scene('2023.11.26 · 카페 앞')+narration('문을 열고 나오던 우영이 산을 알아보고 손을 흔든다. 산은 거의 달려가다가 발을 멈춘다. 우영은 살아 있다. 무엇보다, 자신을 보고 있다.')+faceChat('woo','야, 최산. 너 왜 그래?')+faceChat('san','……그냥. 보고 싶었어.')+faceChat('woo','참나. 그럼 진작 연락하지.')+narration('산은 그 말이 얼마나 고마운지 설명하지 못한다. 하지만 이번에는 침묵만 남기지 않기로 한다.'),btn('CH.08로 ›','nextChapter()','primary'))
+],
+[
+()=>stepView(scene('2023.11.26 · 지금 여기')+narration('둘은 마주 앉아 한참 동안 별것 아닌 이야기를 나눈다. 우영이 주문한 음료를 받아 들고 돌아올 때마다 산은 두 눈으로 그를 확인한다. 그날의 싸움, 해외로 떠나던 날, 끝내 보내지 못한 말. 산에게는 이제 모두 설명해야 할 과거다.')+faceChat('woo','근데 너 오늘 진짜 이상해. 무슨 일 있어?')+faceChat('san','있어. 오래 미뤄 둔 얘기.')+faceChat('woo','그럼 해. 이번엔 좀 말해 봐.')),
+()=>stepView(narration('산은 예전에 똑같은 부탁을 듣고도 도망쳤다. 오늘은 다르다. 우영을 살렸다고 해서 좋아한다는 말을 할 자격이 저절로 생기는 건 아니다. 다만 말을 하지 않을 핑계도 사라졌다.'),findRoleChoice('8-S01',['좋아한다고, 지금도 좋아한다고 말한다.','그때 숨기고 떠나서 미안하다고 말한다.','우선 다시 가까워지고 싶다고 말한다.'])),
+()=>{let a=get('8-S01');stepView(a===0?faceChat('san','나 너 좋아했어. 그때도, 지금도.')+faceChat('woo','……그걸 이제 말하냐.')+faceChat('san','늦은 거 알아. 그래도 이번에는 숨기기 싫어.'):a===1?faceChat('san','너한테 말 안 하고 떠난 거 미안해. 겁나서 네 마음을 멋대로 짐작했어.')+faceChat('woo','……나 그 말 오래 기다렸어.'):faceChat('san','우리 다시 천천히 알아 가면 안 될까?')+faceChat('woo','좋아. 이번엔 먼저 얘기하기다.')+narration('산의 말이 닿았다고 우영의 마음까지 과거 그대로 돌아오는 것은 아니다. 그러나 이번에는 두 사람이 서로의 대답을 들을 수 있다.'))},
+()=>{clueGet('last');stepView(system('[TIME CONNECTION / CLOSED]\n00:00 → 00:01')+narration('산은 낯선 휴대폰을 주머니에 넣는다. 이제 다시 과거로 보낼 문자는 없다. 우영이 맞은편에서 말을 건다. 산은 화면이 아니라 그 얼굴을 바라보며 대답한다. 이번에야말로, 같은 시간에 서 있다.'),btn('엔딩 확인 ›','resolveEnding()','primary'))}
+]
+];
+const WOO_STORY=[
+[
+()=>intro(),
+()=>stepView(narration('2020년 7월 10일. 연락처를 정리하다가 처음 보는 이름을 발견했다. ‘미래’. 누구 마음대로 저장한 거지?')+system('[새 연락처: 미래]'),findRoleChoice('P-W01',['일단 누구인지 물어본다.','연락처 정보를 확인해 본다.','해킹 같으니 삭제해 본다.'])),
+()=>{let a=get('P-W01',0);clueGet('w_contact');if(a===1)clueGet('w_saved');if(a===2)clueGet('w_return');stepView((a===1?system('저장 날짜: 2023.11.26 · 지금은 2020년인데?'):a===2?system('삭제 완료\n[다시 추가된 연락처: 미래]'):'')+chat('woo','제 연락처에 처음 보는 번호가 있는데 누구세요?')+chat('san','그냥 너 아는 사람.')+chat('woo','……저 아는 사람이요? ㅋㅋㅋ 누구시길래')+chat('san','너 지금 몇 년도야?')+chat('woo','2020년이요. 7월 10일인데요?')+narration('질문이 수상하다. 누군가 장난을 치는 것 같은데 말투가 어딘가 익숙하다.'))},
+()=>stepView(chat('san','너 지금 살아 있어?')+chat('woo','네? 당연히 살아 있는데요? 뭐예요 무섭게;')+chat('san','미안. 이상한 소리 했네.')+narration('우영은 더 묻지 않았다. 아직 모르는 번호에 자기 얘기를 털어놓을 생각은 없다.')+system('[시간 연결 · 2020.07.10]'),btn('CH.01로 ›','nextChapter()','primary'))
+],
+[
+()=>stepView(scene('2020년 7월 10일 · 이상한 사람')+chat('san','밥은 먹었어?')+chat('woo','아니요. 근데 왜요 ㅋㅋㅋ')+chat('san','또 안 먹었네.')+chat('woo','또? 저 맨날 굶어요?')+chat('san','가끔 밥 먹는 걸 잊어버리잖아.')+chat('woo','저를 얼마나 아시길래 ㅋㅋ')+narration('몇 마디를 주고받다 보니 웃음이 나온다. 정체는 찜찜하지만 상대는 자신에게 뭘 요구하지도 않는다.'),btn('계속 읽기 ›','next()','primary')),
+()=>stepView(narration('우영은 방을 정리하다 서랍 깊숙이 넣어 둔 2019년 생일 편지를 발견한다. 산이 직접 줬던 편지. 마지막 문장에 볼펜으로 지운 자국이 있다. 미래는 아직 편지의 존재를 모른다.'),findRoleChoice('1-W01',['산에게 편지 이야기를 직접 꺼내 본다.','미래에게 사진을 보내고 의견을 묻는다.','아무에게도 말하지 않고 편지를 간직한다.'])),
+()=>{const a=get('1-W01',2);clueGet('w_letter');clueGet('w_erasure');stepView(a===0?currentChat('woo','야, 작년에 네가 준 생일 편지 있잖아.')+currentChat('san','그거 왜?')+currentChat('woo','끝에 뭐 지웠더라?')+currentChat('san','별거 아니야. 그냥 잘못 썼어.')+narration('산의 답은 짧았다. 우영은 더 묻지 않는다.'):a===1?chat('woo','오늘 오래된 편지 찾았는데 끝에 글씨가 지워져 있거든요. 원래 이런 거 궁금해하는 거 저뿐인가요?')+chat('san','……보낸 사람이 누구야?')+chat('woo','그건 비밀이죠 ㅋㅋ')+narration('‘미래’가 편지를 먼저 안 건 아니다. 우영이 스스로 보여 줬다.'):narration('우영은 편지를 다시 접어 넣는다. 산이 준 건 뭐든 이상하게 버릴 수가 없다.'))},
+()=>stepView(narration('그날 밤, 우영은 몇 번이나 편지 마지막 줄을 떠올린다. 산과 오래 알고 지냈는데도 모르는 것이 늘어나는 기분이다.')+system('[개인 기록 보관 · 2019년 생일 편지 ¹]'),btn('CH.02로 ›','nextChapter()','primary'))
+],
+[
+()=>{clueGet('w_cancel');stepView(scene('▣ 현재 기록 · 2020년 8월 3일')+currentChat('woo','야, 내일 영화 볼래?')+currentChat('san','미안. 약속이 생겼어.')+currentChat('woo','요즘 계속 바쁘네 ㅋㅋ')+currentChat('san','미안. 나중에 보자.')+narration('예전에는 할 이야기가 모자라던 사이였다. 요즘은 “나중에”라는 말만 남는다. 우영은 혼자 서운해지는 자신이 싫다.'),btn('계속 읽기 ›','next()','primary'))},
+()=>{clueGet('w_deleted');stepView(system('[최산 · 새 메시지 알림]\n“우영아, 사실 나……”\n[삭제된 메시지입니다.]')+narration('메시지 목록에 들어가 보니 사라져 있다. 이번에는 우영이 먼저 어떻게 할지 정해야 한다.'),findRoleChoice('2-W01',['산에게 방금 하려던 말을 물어본다.','답을 재촉하지 않고 기다린다.','장난처럼 떠보면서 눈치를 살핀다.']))},
+()=>{const a=get('2-W01',1);stepView(a===0?currentChat('woo','야 아까 메시지 뭐야? 사실 나 뭐?')+currentChat('san','아…… 별거 아니야.')+currentChat('woo','별거 아니면 왜 지움?'):a===1?narration('우영은 메시지에 답하지 않는다. 궁금한 건 분명한데, 산도 언젠가는 말할 거라고 믿어 보기로 한다.'):currentChat('woo','야 너 나한테 고백하다 지운 거냐? ㅋㅋ')+currentChat('san','뭐래 ㅋㅋ')+narration('산의 답장이 빠르다. 그런데 우영은 이상하게 심장이 뛴다.'))},
+()=>stepView(scene('◉ 시간 연결 · 미래')+chat('san','오늘 하루는 어땠어?')+chat('woo','뭔가 그냥 좀 그렇네요.')+chat('san','힘든 일 있었어?')+chat('woo','가까운 친구랑요. 요즘은 걔가 무슨 생각하는지 모르겠어요.')+narration('예전 같으면 이상한 사람에게 이런 말은 하지 않았을 것이다. 하지만 미래는 가끔 말을 끊지 않고 들어 주었다.')+system('[보관된 기록: 삭제된 메시지 알림 ²]'),btn('CH.03으로 ›','nextChapter()','primary'))
+],
+[
+()=>{clueGet('w_voice');stepView(scene('▣ 현재 기록 · 2020년 9월 12일')+narration('산이와의 약속이 또 미뤄졌다. 우영은 취소된 약속 메시지를 다시 읽다가 괜히 예전 대화까지 거슬러 올라간다.\n\n2019년 7월 10일. 산의 생일이었다. 우영의 생일 편지와는 별개의 기억이다. 깜짝 선물을 들고 약속 장소로 가던 자신이 조금 늦었고, 산은 그날 짧은 음성 메시지를 보냈다.')+system('[최산이 보낸 음성 메시지 · 2019.07.10 · 00:12]\n▶ 재생된 기록\n“야, 정우영. 너 어디야? 나 계속 기다리고 있는데. ……빨리 와. 너 없으면 재미없단 말이야.”')+narration('그때는 듣자마자 웃어넘겼다. 기다리고 있다는 투정조차 당연했다. 그런데 지금은 약속을 잡기 위해 자신이 먼저 몇 번이고 연락하고 있었다.\n\n그때는 산이 나를 기다렸는데. 지금은 내가 산이를 기다린다.'),btn('계속 읽기 ›','next()','primary'))},
+()=>stepView(narration('우영은 재생이 끝난 화면을 한참 바라본다. 친구가 보고 싶다고 말하는 건 흔한 일일 텐데, 왜 자신에게만 이렇게 오래 남아 있을까. 산이의 마음을 단정할 수는 없다. 하지만 자신의 마음은 더는 모른 척하기 어려웠다.'),findRoleChoice('3-W01',['산을 직접 만나서 달라진 이유를 묻는다.','산에게 그날을 기억하냐고 물어본다.','지금 내 마음을 먼저 메모에 적는다.'])),
+()=>{let a=get('3-W01',1);clueGet('w_draft');stepView(a===0?scene('◇ 대면 기록 · 2020년 9월')+faceChat('woo','야, 나 요즘 너한테 묻고 싶은 게 많아.')+faceChat('san','……뭔데?')+faceChat('woo','우리가 언제부터 이렇게 약속 잡기도 힘들어졌냐?')+faceChat('san','미안. 정신이 없어서.')+narration('산은 끝내 무슨 일이 있는지 말하지 않았다. 우영도 좋아한다는 말만은 삼켰다.'):a===1?scene('▣ 현재 기록 · 2020년 9월')+currentChat('woo','야, 작년 네 생일 기억나? 나 늦었다고 네가 음성 메시지 보냈잖아 ㅋㅋ')+currentChat('san','기억나지. 너 그날 엄청 뛰어왔잖아.')+currentChat('woo','그땐 네가 기다렸는데 요즘엔 나만 기다리는 기분이다.')+currentChat('san','……미안. 요즘 좀 정신없어.')+narration('산은 이유를 설명하지 않았다. 하지만 그날을 둘 다 기억한다는 사실만은 조금 위로가 됐다.'):narration('우영은 메모 앱을 연다. “나 사실 최산 좋아해.” 한 글자씩 적고 나니 도리어 겁이 났다. 아직은 보내지 못하고 저장만 한다.'))},
+()=>stepView(scene('▣ 현재 기록 · 2020년')+currentChat('woo','야 최산. 우리 나중에 엄청 싸우면 어떡하냐.')+currentChat('san','뭔 소리야 ㅋㅋ 화해하면 되지.')+narration('우영은 그 말이 조금 위로가 된다. 아직 서로를 좋아하는지 알 수 없지만, 적어도 관계를 지키고 싶다.')+system('[보관된 기록: 고백 메모 초안 ³]'),btn('CH.04로 ›','nextChapter()','primary'))
+],
+[
+()=>stepView(scene('▣ 현재 기록 · 2020년 11월 18일')+narration('산이 곧 해외로 간다는 말을 다른 친구에게 들었다. 우영은 잠깐 귀를 의심했다.')+currentChat('woo','너 해외 간다며.')+currentChat('san','아직 확정된 거 아니야.')+currentChat('woo','그럼 나는 언제 듣는데?')+currentChat('san','……미안.')+narration('산이 떠나는 것보다, 자신에게 말하지 않았다는 사실이 더 서러웠다.'),btn('계속 읽기 ›','next()','primary')),
+()=>stepView(scene('▣ 전화 통화 · 2020.11.18')+currentChat('woo','제발 말 좀 해.')+currentChat('san','니한테 말하면 뭐가 달라지는데. 더 멀어지기만 할 텐데.')+currentChat('woo','그럼 우리 끝내. 어차피 아무것도 말 못 하는 사이잖아, 우리!')+narration('전화가 끊겼다. 우영은 “끝내”라는 말을 제 입으로 했다는 사실이 믿기지 않는다.'),findRoleChoice('4-W01',['다시 연락해서 지금이라도 화해를 청한다.','편지에 말하지 못한 마음을 적는다.','아무 말 없이 산을 보내 준다.'])),
+()=>{clueGet('w_lastcall');clueGet('w_unsentletter');const a=get('4-W01',2);stepView(a===0?currentChat('woo','아까는 미안했어. 근데 진짜 이렇게 끝나?')+currentChat('san','……나도 미안해. 연락할게.'):a===1?narration('우영은 종이를 꺼낸다. “산아, 나 사실…….” 끝내 접지 못한 편지가 서랍에 남는다.'):narration('그날 이후 먼저 연락하지 않았다. 두려워서 더 차가운 척했다.'))},
+()=>stepView(scene('◉ 시간 연결 · 연락 두절')+chat('woo','저기요. 저 오늘 그 친구랑 진짜 끝난 것 같아요.')+system('[전송 실패]\n[연락처를 찾을 수 없습니다.]')+narration('‘미래’도 사라졌다. 가끔 생각나서 찾아도 돌아오지 않았다. 2021년에도, 2022년 초에도.')+system('[보관된 기록: 마지막 통화와 쓰다 만 편지 ⁴]'),btn('CH.05로 ›','nextChapter()','primary'))
+],
+[
+()=>{clueGet('w_reappeared');stepView(scene('2022년 8월 16일 · 다시 온 사람')+narration('거의 2년 만에 연락처 ‘미래’가 돌아왔다. 우영은 믿을 수 없어 화면을 몇 번이나 눌렀다.')+system('[새 연락처: 미래]')+chat('woo','저기요? 혹시 예전에 저랑 연락했던 분 맞아요?')+chat('san','왜 이제야 답장해?')+chat('woo','……네? 저 2년 동안 연락 못 했는데요?')+chat('san','……2년?')+narration('이상한 사람은 어제 대화를 나눈 듯했지만, 우영에게는 긴 계절이 지났다.'),btn('계속 읽기 ›','next()','primary'))},
+()=>stepView(chat('woo','산이가 잠깐 한국 온대요.')+chat('san','……그래?')+chat('woo','저 아직도 좋아하나 봐요. 이번에는 이야기하고 싶어요.')+narration('그동안 그리웠던 건 사실이다. 그런데 좋아한다는 말을 꺼낼 용기는 아직 부족하다.'),findRoleChoice('5-W01',['산에게 직접 전화해 본다.','부담스럽지 않게 안부 문자를 보낸다.','일단 얼굴을 볼 생각부터 한다.'])),
+()=>{let a=get('5-W01',1);clueGet('w_backup');stepView(a===0?currentChat('woo','산아. 내일 잠깐 시간 있어?')+currentChat('san','……응. 보고 싶었어.'):a===1?currentChat('woo','잘 지내? 한국 온다며.')+currentChat('san','응. 너도 잘 지냈어?')+narration('짧지만 답장이 왔다.'):narration('우영은 공항의 도착 시간을 찾아본다. 서로 얼굴만 보면 어떤 말이든 할 수 있을 것 같다.'))},
+()=>stepView(chat('woo','저 내일 걔 만나면 뭐부터 말할까요?')+chat('san','네가 꼭 하고 싶은 말.')+chat('woo','……좋아한다고요.')+narration('‘미래’가 누구인지 아직 모른다. 그래도 산에게 솔직해지기로 한 선택만은 우영 자신의 것이다.')+system('[보관된 기록: 2년 만에 돌아온 연락처 ⁵]'),btn('CH.06으로 ›','nextChapter()','primary'))
+ ],
+[
+()=>stepView(scene('▣ 현재 기록 · 2022년 8월 17일')+narration('우영은 산이 오늘 한국에 돌아온다는 소식을 다시 확인한다. 만나면 무슨 말부터 꺼낼까. 2년 전에는 서로를 붙잡지 못했다. 이번에는 같은 실수를 하고 싶지 않다.')+narration('휴대폰에 남아 있는 산의 번호를 한참 들여다본다. 머릿속에 떠오르는 말은 단 하나. “보고 싶었어.”')+system('[2022.08.17 · 정우영의 메모]\n“산아, 우리 그때 못 했던 얘기 좀 할까?”'),btn('계속 읽기 ›','next()','primary')),
+()=>{clueGet('w_airportletter');stepView(narration('방법은 셋이다. 어떤 식으로든 오늘은 산과 제대로 이야기하고 싶다. 우영은 자신의 방식으로 한 걸음을 내딛기로 한다.'),findRoleChoice('6-W01',['먼저 전화를 걸어 목소리부터 듣는다.','못다 한 편지를 먼저 보낸다.','지금 당장 공항으로 얼굴을 보러 간다.']))},
+()=>{const a=get('6-W01',2);s.run.alive=a!==2;s.run.safety=a===2?0:3;s.run.letterEnding=a===2?'산아, 나 지금 너 만나러 가고 있어. 이번엔 얼굴을 보고 말할게.':a===1?'산아, 2년 동안 하지 못한 말이 있어. 나 아직도 너 좋아해.':'산아, 목소리라도 들으니까 조금 살 것 같다.';save();stepView(a===0?scene('▣ 현재 기록 · 전화 연결')+system('[최산에게 전화 중…]\n[연결됨]')+currentChat('san','여보세요?')+currentChat('woo','……산아. 나야.')+currentChat('san','우영아?')+currentChat('woo','응. 그냥 네 목소리가 듣고 싶어서.')+currentChat('san','……나도. 우리 만나서 얘기할래?')+narration('서로 서두르지 않기로 한다. 산이 먼저 우영을 만나러 오겠다고 말한다.'):a===1?scene('▣ 현재 기록 · 발송한 편지')+narration('우영은 2년 동안 접어 두었던 편지를 완성한다. 보내기 버튼 앞에서 손이 잠시 멈추지만, 이번에는 지우지 않는다.')+system('[최산에게 편지 전송 완료]\n“산아, 그날은 미안했어. 나 사실 지금도 너 좋아해. 네가 괜찮다면 제대로 이야기하고 싶어.”')+currentChat('san','우영아. 편지 읽었어.')+currentChat('san','나도 너한테 할 말 있어. 내가 갈게.')+narration('우영은 약속 장소를 정하고 천천히 산을 기다린다.'):scene('▣ 현재 기록 · 공항으로 향하는 길')+narration('우영은 망설이다가 외투를 챙긴다. 전화나 편지로는 차마 전하지 못할 것 같다. 지금 바로 얼굴을 보고 싶다.')+narration('차에 탄 우영은 메모 앱을 열고 산에게 보낼 말을 적기 시작한다. “산아, 나 지금 너 만나러 가고 있어.”')+system('[임시 저장 중…]'),btn(a===2?'마지막 기록 읽기 ›':'계속 읽기 ›','next()','primary'))},
+()=>{const a=get('6-W01',2);stepView(a===2?system('[2022.08.17 · 16:42]\n[작성 중이던 메시지를 복구합니다.]')+narration('완성되지 못한 문장이 화면에 남는다. 그날의 기록은 여기서 멈췄다.') : scene('◇ 대면 기록 · 만남을 앞두고')+narration('우영은 휴대폰을 가만히 쥐었다. 직접 이야기를 나눌 기회가 생겼다. 이번에는 숨기지 않으려고 한다.'),btn(a===2?'미전송 편지 확인 ›':'CH.07로 ›',a===2?'resolveEnding()':'nextChapter()','primary'))}
+],
+[
+()=>{if(!s.run.alive)return resolveEnding();clueGet('w_meeting');stepView(scene('◇ 대면 기록 · 2022년 8월 17일')+narration('우영은 약속 장소에 먼저 도착한다. 이윽고 익숙한 걸음걸이가 보인다. 2년 만에 마주한 최산이다.')+faceChat('san','……우영아.')+faceChat('woo','오랜만이다.')+faceChat('san','그러게. 많이 늦었지.')+narration('둘은 한동안 서로를 바라본다. 우영은 오늘만큼은 지나간 다툼을 모른 척하고 싶지 않다.'),btn('계속 읽기 ›','next()','primary'))},
+()=>stepView(faceChat('san','그때 말도 없이 떠나서 미안했어.')+faceChat('woo','나도 끝내자는 말부터 해서 미안해. 근데 그때 진짜 많이 서운했어.')+faceChat('san','알아. 이제는 숨기지 않을게.')+narration('우영이 먼저 풀어야 할 건 오해다. 무엇부터 말할까?'),findRoleChoice('7-W01',['그날 왜 떠난다는 말을 숨겼는지 묻는다.','나도 그때 널 붙잡고 싶었다고 고백한다.','지금부터라도 천천히 다시 시작하자고 한다.'])) ,
+()=>{let a=get('7-W01',1);stepView(a===0?faceChat('woo','왜 나한테만 말 안 했어?')+faceChat('san','네가 나를 싫어할까 봐. 내가 떠나는 게 너한테 어떤 의미인지 물을 용기도 없었어.')+faceChat('woo','싫어진 게 아니었어. 서운했던 거지.')+narration('늦었지만 서로의 말이 닿았다.'):a===1?faceChat('woo','나도 그날 사실 가지 말라고 하고 싶었어.')+faceChat('san','……정말?')+faceChat('woo','응. 너랑 멀어지는 게 싫었어.')+narration('처음으로 숨겨 뒀던 마음에 이름이 붙는다.'):faceChat('woo','우리 오늘 다 해결 못 해도 괜찮으니까, 다시 알아 가자.')+faceChat('san','좋아. 이번엔 도망 안 갈게.')+narration('급하게 결론 내리지 않아도 괜찮다는 사실에 마음이 조금 가벼워진다.'))},
+()=>stepView(scene('◇ 대면 기록 · 해 질 무렵')+faceChat('san','우영아. 오늘 와 줘서 고마워.')+faceChat('woo','나도. 사실 전할 말이 더 있어.')+narration('끝내 하지 못했던 말을 이제 우영 자신이 고를 차례다.'),btn('CH.08로 ›','nextChapter()','primary'))
+],
+[
+()=>stepView(scene('◇ 대면 기록 · 마지막으로, 너에게')+narration('이 자리에 있는 건 미래에서 온 낯선 상대가 아니다. 지금 눈앞의 최산이다. 우영은 오랫동안 숨겨 왔던 감정을 마주한다.')+faceChat('san','말해 줘. 이번에는 끝까지 들을게.')+narration('우영은 산을 바라본다.'),btn('계속 읽기 ›','next()','primary')),
+()=>stepView(narration('지금 어떤 말을 전하느냐에 따라 두 사람의 내일은 달라질 것이다.'),findRoleChoice('8-W01',['나 너 아직 좋아해. 우리 만나 볼래?','우리 다시 친구부터 시작할까?','오늘은 여기까지만 이야기하자.'])),
+()=>{let a=get('8-W01',1);clueGet('w_truth');stepView(a===0?faceChat('woo','산아, 나 너 아직 좋아해.')+faceChat('san','……나도 좋아해. 오래전부터.')+faceChat('woo','그럼 이제 숨기지 말자. 우리 만나 볼래?')+faceChat('san','응. 이번엔 꼭.')+narration('서로의 마음이 이제야 같은 자리에 도착했다.'):a===1?faceChat('woo','우리 친구부터 다시 시작할까?')+faceChat('san','그래. 이번에는 하고 싶은 말도 좀 하고.')+faceChat('woo','약속이다?')+narration('오늘의 답은 사랑이 아니라 다시 쌓을 믿음이었다.'):faceChat('woo','오늘은 여기까지만 이야기하자.')+faceChat('san','알겠어. 그래도 와 줘서 고마워.')+narration('우영은 웃어 보인다. 전하지 않은 말이 남았지만, 이번에는 자기 선택이었다.'))},
+()=>stepView(system('[현재 기록 보관 완료]\n2022.08.17')+narration('우영은 휴대폰 화면을 잠그고 앞으로 걸어간다. 지난날의 선택은 바꿀 수 없지만, 오늘 어떤 말을 할지는 자신이 정할 수 있었다.')+system('[보관된 기록: 마지막으로 전한 말 ⁸]'),btn('엔딩 확인 ›','resolveEnding()','primary'))
+]
+];
+function relationship(){if(s.role==='woo'){const score=(get('2-W01',1)===0?2:get('2-W01',1)===2?1:0)+(get('3-W01',1)===0?1:0)+(get('4-W01',2)===0?2:get('4-W01',2)===1?1:0)+(get('5-W01',2)===0?1:0)+(get('7-W01',2)===0?1:0);return score>=6?2:score>=3?1:0;}let n=0;if(get('1-S01',2)===0)n++;if(get('2-S01',2)!==2)n++;if(get('3-S01',2)!==2)n++;if(get('4-S01',2)!==2)n++;if(get('7-S01',1)!==1)n++;if(get('8-S01',2)===0)n+=2;else if(get('8-S01',2)===1)n++;return n>=6?2:n>=3?1:0}
+function resolveEnding(){if(false){const fixed=['P-S01','P-W01','6-S01','6-W01','5-S01','5-W01','4-W01','4-S01','8-S01','2-S01','2-W01'];const defaults={'P-S01':1,'P-W01':0,'6-S01':2,'6-W01':0,'5-S01':1,'5-W01':1,'4-W01':2,'4-S01':1,'8-S01':1,'2-S01':1,'2-W01':1};for(let id of fixed)if(s.canon[id]===undefined)s.canon[id]=defaults[id];}let idx;if(!s.run.alive)idx=0;else{const r=relationship(),conf=s.role==='woo'?(get('8-W01',1)===0):(get('8-S01',2)===0),wi=get('4-W01',2);idx=r===0?1:r===1?(conf?3:2):(conf?(s.role==='woo'||wi===1?4:3):5)};s.run.ending=idx;s.activeRoute=false;s.mode='ending';if(!s.endings.includes(idx))s.endings.push(idx);s.endingRecords ||= {};if(!s.endingRecords[idx])s.endingRecords[idx]={role:s.role,letterEnding:s.run.letterEnding||'',collectedAt:Date.now()};if(!s.completed.includes(s.role))s.completed.push(s.role);save();showEnding(idx)}
+const UNSENT_LETTER=`산아.
+
+나 지금 너 만나러 가고 있어.
+
+생각해 보니까 우리 마지막으로 본 게 벌써 2년 전이더라. 예전엔 하루만 안 봐도 뭐 하냐고 연락했던 사이였는데, 이제는 너 만나러 가는 것도 이렇게 큰 결심이 필요하네.
+
+나 사실 그날 네가 붙잡아 줄 줄 알았어. 우리 끝내자고 했을 때 그냥 싫다고, 그러지 말라고 한마디만 해 줬어도 됐는데.
+
+그래서 나도 끝까지 말 안 했어. 내가 너 얼마나 좋아했는지. 네가 떠난다고 했을 때는 가지 말라고 하고 싶었다는 것도.
+
+이제는 말하려고. 네가 나를 좋아하지 않아도 괜찮아. 그냥 내가 널 좋아했다는 건 알아줬으면 좋겠어.
+
+아, 이제 공항 거의 다 왔다. 이따 얼굴 보고 말할게.
+
+조금 있다 보자. 보고 싶었어, 산아.`;
+const endingsBody=[
+'시간을 되돌릴 수 있어도, 모든 사람을 구할 수 있는 것은 아니었다.\n\n산은 다시 우영의 이름 앞에 선다. 답장은 오지 않는다.',
+'네가 살아 있다는 사실만으로 충분하다고 생각했다.\n그런데 사람의 욕심은 끝이 없어서, 나는 네가 보고 싶었다.',
+'정우영: 우리 아직 친구지?\n최산: 당연하지.\n정우영: 그럼 밥 사 ㅋㅋ\n\n사랑이라 말하지 않아도 함께할 수 있는 시간이 있었다.',
+'최산: 나 너 좋아해.\n정우영: ……진짜 늦는다, 너.\n\n늦은 고백이었지만 이번에는 들을 사람이 있었다.',
+'우리는 우리가 사랑했던 시간을 모두 기억하지 못한다.\n그래도 앞으로 사랑할 시간은 남아 있다.',
+'정우영: 그럼 처음부터 다시 하면 되지.\n안녕, 나 정우영이야.\n최산: 안녕. 나는 최산이야.',
+'창가의 남자가 건넨 휴대폰에 오래된 기록이 있다.\n그는 정우영을 구하지 못했던 다른 시간선의 최산이었다.\n몇 번의 실패에도 그는 자신에게 또 한 번의 기회를 넘겼다.\n“이번에는 꼭 행복했으면 하네요.”',
+'정우영: 야 최산, 나 공항 도착했는데. 너 어디야?\n최산: ……우영아?\n\n입국장 너머에서 우영이 손을 흔든다.\n\n이번에는. 아무것도 숨기지 않기로 한다.\n\n00:00 → 00:01\n[새로운 시간이 시작됩니다.]'
+];
+function endingText(idx,role=s.role){
+ if(role!=='woo')return endingsBody[idx];
+ const alt={
+ 0:'끝내 전하지 못한 고백. 우영은 마지막까지 산을 만나러 가고 있었다.\n\n2022년 8월 17일. 미전송 편지 한 장이 남았다.',
+ 1:'살아남았다. 하지만 산에게 진심을 전하지 못했다. 우영은 한동안 익숙한 번호를 바라보다 화면을 덮었다.',
+ 2:'정우영: 우리 앞으로는 말 좀 하자.\n최산: 그래. 그러자.\n\n우리는 아직 친구였고, 그걸로도 충분한 날이 있었다.',
+ 3:'정우영: 산아, 나 아직 너 좋아해.\n최산: ……나도.\n\n이번에는 우영이 먼저 마음을 말했다.',
+ 4:'상처를 지나 다시 시작한 사랑. 우영은 산에게 마음을 감추지 않았고 산도 도망치지 않았다. 우리에게는 아직 내일이 있었다.',
+ 5:'정우영: 우리 다시 알아 가자.\n최산: 처음부터?\n정우영: 응. 이번엔 솔직하게.',
+ 7:'정우영: 산아, 나 도착했어.\n최산: 나도야. 어디 있어?\n\n약속한 장소에서 우영이 먼저 손을 흔든다. 산은 우영을 끌어안는다.\n\n이번에는 내가 먼저 말할게. 좋아해.\n\n00:00 → 00:01\n[새로운 시간이 시작됩니다.]'
+ };return alt[idx]??endingsBody[idx];
+}
+function trueLockReason(){
+ 
+ if(!s.run.alive)return '우영이 살아 있는 시간선에서만 열 수 있어.';
+ if(!(s.role==='woo'?['w_letter','w_lastcall','w_meeting','w_truth']:['letter','time1642','double','last']).every(id=>s.runClues.includes(id)))return '현재 시점에서 핵심 단서를 더 찾아야 해.';
+ if(s.role==='woo'&&relationship()<1)return '산과의 관계를 회복한 기록이 필요해.';if((s.role==='san'?get('8-S01',1)!==0:get('8-W01',1)!==0))return '서로의 마음을 전한 기록이 필요해.';
+ return '';
+}
+function hiddenLockReason(){
+ const remaining=[0,1,2,3,4,5].filter(i=>!s.endings.includes(i));
+ return remaining.length?`일반 엔딩 6개 중 ${6-remaining.length}/6개 수집 · 남은 엔딩 ${remaining.length}개`:'';
+}
+function lockedBtn(label,reason){return `<button class="btn locked" type="button" disabled aria-disabled="true" title="${esc(reason)}">🔒 ${esc(label)}</button><span class="lock-reason">${esc(reason)}</span>`}
+function showEnding(idx){
+ s.mode='ending';s.run.ending=idx;save();
+ const dual=s.completed.length===2;
+ const win=`${idx===0?`<div class="letter-end"><div class="eyebrow">RECOVERED DRAFT / 2022.08.17 16:39</div><h2>수신되지 않은 편지</h2><div class="letter-body">${esc(s.role==='woo'&&s.run.letterEnding?UNSENT_LETTER.replace('조금 있다 보자. 보고 싶었어, 산아.',s.run.letterEnding+'\n\n조금 있다 보자. 보고 싶었어, 산아.'):UNSENT_LETTER)}</div><div class="footnote">이 메시지는 수신자에게 도착하지 않았습니다.</div></div><div class="accident-reveal" role="region" aria-label="미전송 편지의 이유"><div class="eyebrow">ARCHIVE / 사건 기록 · 2022.08.17</div><h2>편지가 도착하지 못한 이유</h2><p class="accident-lead">오후 4시 39분, 정우영은 공항으로 향하는 차 안에서 편지를 작성하고 있었다.<br>편지를 보내기도 전에 사고가 발생했다.</p>${evidenceImage('article')}<div class="accident-news"><strong>공항행 연결도로 연쇄 추돌… 탑승자 사망</strong><br><span>2022년 8월 17일 오후 4시 42분. 공항 방면 차량 여러 대가 충돌하는 사고가 발생했다. 이 사고로 차량에 타고 있던 23세 정 모 씨가 숨졌다.</span></div><div class="accident-final">[작성 중이던 편지 · 임시 저장됨]<br>[전송 기록 없음]</div><p class="footnote">※ 본 기사는 게임 속 가상 사건을 위한 창작 자료입니다.</p></div>`:''}<div class="ending"><div class="eyebrow">${idx===7?'TRUE END':idx===6?'HIDDEN END':'ENDING '+String(idx+1).padStart(2,'0')}</div><h2>${esc(endingNames[idx])}</h2><div class="sub" style="white-space:pre-line;color:#e2ddeb">${esc(endingText(idx))}</div></div>`;
+ let buttons='';
+ buttons+=btn('다른 시점 · 독립 시간선 시작',`start('${s.role==='san'?'woo':'san'}')`,'primary');
+ buttons+=btn('다음 시간선 열기',`restartRole()`,'ghost');
+ const trueReason=trueLockReason();
+ const hiddenReason=hiddenLockReason();
+ buttons=(trueReason?lockedBtn('진엔딩',trueReason):btn('진엔딩 열람',`openTrue()`,'primary'))+
+         (hiddenReason?lockedBtn('히든 기록',hiddenReason):btn('히든 기록 열람',`openHidden()`))+buttons;
+ buttons+=btn('메인 화면으로',`toHome()`,'ghost');
+ set(win+`<p class="sub" style="text-align:center">수집한 엔딩 ${s.endings.length}/8 · 독립 루트 ${NAMES[s.role]}</p>`,buttons);
+}
+function openTrue(){if(!s.run.alive){return alert('진엔딩은 우영이 살아 있는 시간선에서만 열려.')}if(!(s.role==='woo'?['w_letter','w_lastcall','w_meeting','w_truth']:['letter','time1642','double','last']).every(id=>s.runClues.includes(id)))return alert('현재 시점에서 핵심 단서를 더 찾아야 해.');if(s.role==='woo'&&relationship()<1)return alert('산과의 관계를 회복해야 해.');if((s.role==='san'?get('8-S01',1)!==0:get('8-W01',1)!==0))return alert('산에게 마음을 전한 기록이 필요해. 새로운 시간선에서 확인해 봐.');s.endings.includes(7)||s.endings.push(7);s.endingRecords ||= {};if(!s.endingRecords[7])s.endingRecords[7]={role:s.role,letterEnding:'',collectedAt:Date.now()};s.run.ending=7;s.mode='ending';save();showEnding(7)}
+function openHidden(){const reason=hiddenLockReason();if(reason)return alert('히든 기록 잠금: '+reason);clueGet('prev');s.endings.includes(6)||s.endings.push(6);s.endingRecords ||= {};if(!s.endingRecords[6])s.endingRecords[6]={role:s.role,letterEnding:'',collectedAt:Date.now()};s.run.ending=6;s.mode='ending';save();showEnding(6)}
+function toHome(){s.mode='home';save();home()}
+function restartRole(){if(s.activeRoute||!['ending','home'].includes(s.mode)||s.completed.length===0){alert('엔딩을 확인한 후에만 새로운 시간선을 열 수 있어요.');return;}sheet(`<div class="eyebrow">NEXT RECORD</div><h2>다음 시간선을 열까?</h2><p class="sub">이 시간선의 선택은 바꿀 수 없어. 새로운 기록에서는 다시 선택할 수 있지만, 이전의 실패와 단서는 남아.</p>${btn('새로운 기록 열기',`confirmRestart()`,'primary')}${btn('취소',`closeSheet()`,'ghost')}`)}
+function confirmRestart(){if(s.activeRoute||s.completed.length===0)return;const keepRole=s.role||'san';s.loopHistory.push({role:keepRole,ending:s.run.ending,canon:{...s.canon}});if(s.run.ending===0)s.failures++;s.timeline=(s.timeline||0)+1;s.canon={};s.run={};s.timelineOutcome=undefined;s.completed=[];s.runClues=[];s.unreadClues=[];s.clueNoticeSeen={};s.role=null;s.chapter=0;s.step=0;s.activeRoute=false;s.mode='home';s.history=[];closeSheet();save();home()}
+function start(role){if(s.activeRoute||s.mode==='play'){alert('진행 중인 기록은 끝까지 읽어야 해.');return;}if(s.mode==='ending'&&s.role){s.loopHistory.push({role:s.role,ending:s.run.ending,canon:{...s.canon}});if(s.run.ending===0)s.failures++;s.timeline++;s.canon={};s.run={};s.timelineOutcome=undefined;s.completed=[];s.clueNoticeSeen={};s.runClues=[];s.unreadClues=[];}s.roleCounts[role]=(s.roleCounts[role]||0)+1;s.role=role;s.activeRoute=true;s.mode='play';s.chapter=0;s.step=0;s.run={};save();render()}
+function resume(){if(!s.activeRoute)return; s.mode='play';save();render()}
+function home(){let html=`<div class="hero"><div class="eyebrow">AN ARCHIVE OF UNDELIVERED WORDS</div><div class="bigtime">00:00</div><div class="h1">연결되지 않은 시간</div><p class="sub">2020.07.10 ───── 2023.11.26<br><br>서로를 사랑했지만 끝내 마음을 전하지 못한 두 사람, 당신의 선택으로 그들의 끝나 버린 시간을 다시 이어 주세요.</p></div><div class="card"><div class="panelrow"><span class="badge">미스터리</span><span class="badge">첫사랑</span><span class="badge">멀티엔딩</span><span class="badge">ARCHIVE</span></div><p class="footnote">산: 구원·생존 / 우영: 화해·고백 · 시점별 독립 엔딩 · 프롤로그~8챕터 · 자동 저장 · 단서함<br>※ 비공식 팬 창작물이며 실제 인물의 사생활·관계와 무관한 허구입니다.</p></div>`;let footer='';if(!s.activeRoute)footer+=btn('기록 01 / 최산 — 남겨진 사람',`start('san')`,'primary')+btn('기록 02 / 정우영 — 아직 끝나지 않은 사람',`start('woo')`);else footer+=btn('이어하기 · '+NAMES[s.role],`resume()`,'primary');footer+=btn('플레이 안내',`openGuide()`)+btn('단서함 / 수집한 엔딩 확인',`openArchive()`,'ghost');html+=`<div class="card"><div class="eyebrow">TIME RECORD</div><div class="statrow"><span>현재 기록</span><strong>${s.role?NAMES[s.role]:"미선택"}</strong></div><div class="statrow"><span>수집한 단서</span><strong>${s.clues.filter(id=>visibleCatalog().some(c=>c[0]===id)).length}/${visibleCatalog().length}</strong></div><div class="statrow"><span>수집한 엔딩</span><strong>${s.endings.length}/8</strong></div><div class="statrow"><span>시간선 버전</span><strong>${s.timeline+1}</strong></div></div>`;set(html,footer)}
+function sheet(content){$('sheet').classList.remove('critical-sheet');$('sheetContent').innerHTML=content;$('sheet').classList.remove('hide')};function closeSheet(){$('sheet').classList.add('hide');$('sheet').classList.remove('critical-sheet');if(toastQueue.length)setTimeout(showClueToast,120)}
+function evidenceImage(id){
+ const common='style="width:100%;height:auto;margin:9px 0;border:1px solid #c1b9ad;background:#f3f0e9" role="img"';
+ if(id==='w_voice')return `<div class="evidence-card"><div class="eyebrow">PERSONAL ARCHIVE / W-003 · AUDIO RECORD</div><div class="voice-meta">2019.07.10 · 최산 → 정우영 · 00:12</div><div class="voice-play">▶ 음성 메시지 · 기록 재생 내용</div><div class="voice-quote">“야, 정우영. 너 어디야?<br>나 계속 기다리고 있는데.<br>……빨리 와.<br>너 없으면 재미없단 말이야.”</div><div class="voice-memo"><b>기록 메모</b><br>그때는 산이 나를 기다렸다.<br>지금은 내가 산이를 기다리고 있다.</div><div class="footnote">텍스트로 복원된 가상의 음성 기록 · 실제 음성 파일 없음</div></div>`;
+ if(id.startsWith('w_')){const x=clueFor(id);return `<div class="evidence-card"><div class="eyebrow">PERSONAL ARCHIVE · ${x?x[1]:'P'}</div><div class="evidence-title">${esc(x?.[2]||'보관된 기록')}</div><div class="evidence-copy">${esc(x?.[3]||'')}</div><div class="footnote">FICTIONAL RECORD / WOOYOUNG</div></div>`;}if(id==='article')return `<svg viewBox="0 0 345 265" ${common} aria-label="가상 신문 사고 기록 2022년 8월 17일 오후 4시 42분"><rect width="345" height="265" fill="#f1eee7"/><text x="20" y="26" font-size="11" font-family="serif" fill="#41524f" letter-spacing="2">ARCHIVE PRESS / FICTION</text><path d="M20 38H325" stroke="#8a8c81"/><text x="20" y="65" font-size="15" font-weight="bold" fill="#242e2e">공항행 연결도로 다중 추돌 사고</text><text x="20" y="87" font-size="10" fill="#666">2022.08.17  ·  발생 시각 16:42</text><rect x="20" y="102" width="305" height="105" fill="#aab3b0"/><path d="M20 195L112 145L227 145L325 195" stroke="#6b7273" stroke-width="32"/><path d="M35 192L112 148L227 148L310 192" stroke="#d8d5cc" stroke-width="1.8" stroke-dasharray="8 7"/><rect x="140" y="147" width="27" height="12" rx="3" fill="#383e41"/><rect x="183" y="167" width="27" height="12" rx="3" fill="#545658"/><text x="20" y="229" font-size="9.5" fill="#4c5653">차량 여러 대가 연쇄 추돌 · 도로 통제</text><text x="20" y="247" font-size="8" fill="#92958d">게임 내 가상 기사 / 실제 사건·언론사 아님</text></svg>`;
+ if(id==='map')return `<svg viewBox="0 0 345 220" ${common} aria-label="사고 구간 개략도"><rect width="345" height="220" fill="#eceae2"/><text x="17" y="25" font-size="11" fill="#455652" letter-spacing="1">ROUTE / SCHEMATIC</text><path d="M17 38H327" stroke="#c7beb1"/><path d="M40 164Q105 66 172 118T306 62" stroke="#b5b4ac" stroke-width="33" fill="none"/><path d="M40 164Q105 66 172 118T306 62" stroke="#fafaf4" stroke-width="1.5" stroke-dasharray="7 7" fill="none"/><circle cx="208" cy="128" r="11" fill="#9b6f60"/><circle cx="208" cy="128" r="18" fill="none" stroke="#9b6f60" stroke-dasharray="3 3"/><text x="218" y="114" font-size="10" fill="#614f47">16:42</text><text x="18" y="202" font-size="9" fill="#6c736d">가상 도로 개략도 · 축척 없음 · 사고 지점 표시</text></svg>`;
+ if(id==='phone2022')return `<svg viewBox="0 0 345 173" ${common} aria-label="2022년 8월 17일 통화 기록"><rect width="345" height="173" fill="#f1eee7"/><text x="18" y="26" font-size="11" fill="#3c5955">CALL HISTORY / 2022.08.17</text><path d="M18 40H327" stroke="#bdb9b0"/><text x="18" y="66" font-size="12" fill="#303c3b">정우영 ↔ 최산</text><text x="18" y="89" font-size="10" fill="#767b76">연결 상태: 통화 완료 또는 시도 기록</text><path d="M18 107H327" stroke="#d2ccc1"/><text x="18" y="129" font-size="10" fill="#465f59">해당 시간선에 따라 기록이 달라집니다.</text><text x="18" y="152" font-size="9" fill="#898b83">게임 내 가상 기록</text></svg>`;
+ if(id==='confession'||id==='letter'||id==='unsent')return `<svg viewBox="0 0 345 150" ${common} aria-label="보내지 못한 편지 기록"><rect width="345" height="150" fill="#f3f0e8"/><path d="M20 34H325M20 112H325" stroke="#c3b9aa"/><text x="20" y="21" font-size="10" fill="#62716b">UNDELIVERED / RECORD</text><text x="20" y="63" font-size="15" font-family="serif" fill="#334540">보내지 못한 말</text><text x="20" y="89" font-size="10" fill="#697570">“네가 알았으면 좋겠어.”</text><text x="20" y="133" font-size="9" fill="#929188">게임 내 가상 문서</text></svg>`;
+ return '';
+}
+
+function openArchive(filter='all'){dismissClueToast();let shown=visibleCatalog().filter(x=>filter==='all'||String(x[1])===String(filter));let list=shown.map(x=>{let found=s.clues.includes(x[0]);let unread=found&&s.unreadClues.includes(x[0]);return found?`<button type="button" class="clue clue-open ${unread?'clue-unread':''}" onclick="openClueDetail('${x[0]}','${filter}')"><span class="cluename">${esc(x[2])}<sup class="sup">${x[1]===0?'P':x[1]}</sup></span>${unread?'<span class="clue-newtag">● NEW</span>':''}<div class="cluedesc">${unread?'아직 확인하지 않은 기록 · 눌러서 열람':'열람 완료 · 다시 보기'}</div></button>`:`<div class="clue"><div class="cluename">???<sup class="sup">${x[1]===0?'P':x[1]}</sup></div><div class="cluedesc">아직 발견되지 않은 단서</div></div>`}).join('');let chips=['all',0,1,2,3,4,5,6,7,8].map(i=>`<button class="chip ${String(i)===String(filter)?'on':''}" onclick="openArchive('${i}')">${i==='all'?'전체':i===0?'P':i}</button>`).join('');sheet(`<div class="row"><h2 style="flex:4;margin:0">단서 수집함</h2><button class="iconbtn" onclick="closeSheet()">✕</button></div><p class="footnote">단서를 눌러 상세 내용을 확인하면 빨간 점이 사라져. 작은 숫자는 발견 챕터야.</p>${s.unreadClues.length?`<p class="clue-notice">● 아직 확인하지 않은 기록 ${s.unreadClues.length}개</p>`:''}<div>${chips}</div>${list}<hr class="divider"><h3>엔딩 수집 · ${s.endings.length}/8</h3><p class="footnote">🔒 히든 기록은 일반 엔딩 6개를 모두 수집하면 열립니다. 현재 ${[0,1,2,3,4,5].filter(i=>s.endings.includes(i)).length}/6</p>${endingNames.map((n,i)=>s.endings.includes(i)?`<button type="button" class="ending-replay-row" onclick="replayEnding(${i},'${filter}')"><span>${String(i+1).padStart(2,'0')} · ${esc(n)}</span><span>✓ 다시 보기 ›</span></button>`:`<div class="statrow ending-locked-row"><span>${String(i+1).padStart(2,'0')} · ???</span><span>🔒</span></div>`).join('')}`)}
+
+/* Read-only collected ending viewer: no route state, counters, choices or unlocks change. */
+function replayEnding(idx,filter='all'){
+ if(!Number.isInteger(idx)||idx<0||idx>=endingNames.length||!s.endings.includes(idx))return;
+ const record=(s.endingRecords||{})[idx];
+ const role=record?.role||s.role||'san';
+ const prefix=idx===7?'TRUE END':idx===6?'HIDDEN END':'ENDING '+String(idx+1).padStart(2,'0');
+ const note=record?.role?`수집 당시 시점 · ${NAMES[role]}`:'이전에 수집한 기록 · 당시 시점 정보는 저장되어 있지 않아 현재 선택된 시점의 본문을 표시합니다.';
+ let extra='';
+ if(idx===0){
+   let letter=UNSENT_LETTER;
+   if(role==='woo'&&record?.letterEnding)letter=letter.replace('조금 있다 보자. 보고 싶었어, 산아.',record.letterEnding+'\n\n조금 있다 보자. 보고 싶었어, 산아.');
+   extra=`<div class="letter-end"><div class="eyebrow">RECOVERED DRAFT / 2022.08.17 16:39</div><h2>수신되지 않은 편지</h2><div class="letter-body">${esc(letter)}</div><div class="footnote">이 메시지는 수신자에게 도착하지 않았습니다.</div></div><div class="accident-reveal" role="region" aria-label="미전송 편지의 이유"><div class="eyebrow">ARCHIVE / 사건 기록 · 2022.08.17</div><h2>편지가 도착하지 못한 이유</h2><p class="accident-lead">오후 4시 39분, 정우영은 공항으로 향하는 차 안에서 편지를 작성하고 있었다. 편지를 보내기도 전에 사고가 발생했다.</p>${evidenceImage('article')}<div class="accident-news"><strong>공항행 연결도로 연쇄 추돌… 탑승자 사망</strong><br><span>2022년 8월 17일 오후 4시 42분. 공항 방면 차량 여러 대가 충돌하는 사고가 발생했다. 이 사고로 차량에 타고 있던 23세 정 모 씨가 숨졌다.</span></div><div class="accident-final">[작성 중이던 편지 · 임시 저장됨]<br>[전송 기록 없음]</div><p class="footnote">※ 게임 속 가상 사건을 위한 창작 자료입니다.</p></div>`;
+ }
+ sheet(`<div class="row" style="align-items:center"><h2 style="flex:4;margin:0">수집한 엔딩 다시 보기</h2><button class="iconbtn" type="button" onclick="openArchive('${filter}')" aria-label="수집함으로 돌아가기">✕</button></div><p class="footnote">${esc(note)} · 재열람은 진행 상황이나 회차를 변경하지 않습니다.</p>${extra}<div class="ending"><div class="eyebrow">${prefix}</div><h2>${esc(endingNames[idx])}</h2><div class="sub" style="white-space:pre-line">${esc(endingText(idx,role))}</div></div>${btn('← 엔딩 수집함으로 돌아가기',`openArchive('${filter}')`,'primary')}`);
+}
+
+function exportSave(){const pack={format:'archive_0000_v3',savedAt:new Date().toISOString(),data:s};const blob=new Blob([JSON.stringify(pack,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='00-00_기록백업.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000)}
+function importSaveFile(){const i=document.createElement('input');i.type='file';i.accept='.json,application/json';i.addEventListener('change',async()=>{const f=i.files&&i.files[0];if(!f)return;try{const t=JSON.parse(await f.text());if(t.format!=='archive_0000_v3'||!t.data||!Array.isArray(t.data.clues)||!t.data.canon||!t.data.run)throw Error('다른 형식');if(!confirm('현재 저장 기록을 백업 파일로 교체할까요?'))return;s=t.data;s.roleCounts ||= {san:0,woo:0};s.loopHistory ||= [];s.endingRecords ||= {};s.failures ||= 0;s.unreadClues ||= [];s.clueNoticeSeen ||= {};s.runClues ||= [];s.activeRoute ??= (s.mode==='play');save();closeSheet();render()}catch(e){alert('읽을 수 없는 기록 파일이야.')}});i.click()}
+
+function openMenu(){sheet(`<div class="row"><h2 style="flex:4;margin:0">메뉴</h2><button class="iconbtn" onclick="closeSheet()">✕</button></div><p class="footnote">《00:00》 독립 작품입니다. 기존 팬폰과 별도의 저장 공간을 사용합니다.</p>${btn('게임으로 돌아가기',`closeSheet()`,'primary')}${btn('단서 및 엔딩 수집함',`openArchive()`)}${btn('메인 화면으로',`closeSheet();toHome()`)}${!s.activeRoute&&s.completed.length?btn('다음 시간선 열람',`closeSheet();restartRole()`,'ghost'):''}${btn('플레이 안내',`openGuide()`)}${btn('기록 백업 파일 저장',`exportSave()`)}${btn('기록 백업 불러오기',`importSaveFile()`)}<p class="footnote">진행 상황은 이 기기의 브라우저에만 저장돼. 브라우저 데이터 삭제 또는 다른 기기로 이동하면 공유되지 않아.</p>`)}
+function clearAll(){if(!confirm('모든 진행 기록, 수집한 단서와 엔딩까지 삭제할까요?'))return;s=empty();localStorage.removeItem(KEY);closeSheet();home()}
+$('cluesBtn').addEventListener('click',()=>openArchive());$('menuBtn').addEventListener('click',openMenu);$('sheet').addEventListener('click',e=>{if(e.target===$('sheet'))closeSheet()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});window.addEventListener('error',e=>{console.error(e.error)});render();
+</script></body></html>
